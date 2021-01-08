@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Linq;
+using System.Web;
+using System.Web.Configuration;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace GUCera
+{
+    public partial class Student_profile : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //int sid = Int16.Parse(Request.QueryString["ID"]);
+            int sid = 1;
+            String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
+
+            SqlConnection conn = new SqlConnection(connStr);
+
+            SqlCommand viewProfileProc = new SqlCommand("viewMyProfile", conn);
+            viewProfileProc.CommandType = CommandType.StoredProcedure;
+            viewProfileProc.Parameters.Add(new SqlParameter("@id", sid));
+
+            conn.Open();
+            SqlDataReader reader = viewProfileProc.ExecuteReader(CommandBehavior.CloseConnection);
+            if (reader.Read())
+            {
+                ID.Text = reader.GetInt32(reader.GetOrdinal("id")).ToString();
+                First_name.Text = reader.GetString(reader.GetOrdinal("firstName"));
+                Last_name.Text = reader.GetString(reader.GetOrdinal("lastName"));
+                Password.Text = reader.GetString(reader.GetOrdinal("password"));
+                Email.Text = reader.GetString(reader.GetOrdinal("email"));
+                //bool g =reader.GetBoolean(reader.GetOrdinal("gender"));
+                byte[] g = (byte[])reader["gender"];
+                String gender = "Male";
+                if (g[0]==0)
+                    gender = "Female";
+                Gender.Text = gender;
+                Address.Text = reader.GetString(reader.GetOrdinal("address"));
+                GPA.Text = reader.GetDecimal(reader.GetOrdinal("gpa")).ToString();
+            }
+
+
+        }
+
+       
+    }
+}
