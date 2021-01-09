@@ -14,13 +14,18 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ((int)Session["card"] == 1)
+            {
+                error.Visible = true;
+                error.Text = "Credit Card is added Successfully";
+                Session["card"] = 0;
+            }
         }
 
         protected void submitC_Click(object sender, EventArgs e)
         {
-            //int id = Int32.Parse(Request.QueryString["id"]);
-            int id = 1;
+
+            int id = (int)Session["user"];
             String number = ccn.Text;  
             if (number.Length == 0)
             {
@@ -44,9 +49,9 @@ namespace GUCera
             addCreditCard.Parameters.Add(new SqlParameter("@cvv", cvvN));
             conn.Open();
             addCreditCard.ExecuteNonQuery();
-            error.Visible = true;
-            error.Text = "Credit card is added successfully";
             conn.Close();
+            Session["card"] = 1;
+            Response.Redirect("MyCreditCards.aspx");
 
 
         }

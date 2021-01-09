@@ -8,6 +8,7 @@
     </title>
     <style>
         .Curved1        {        	-webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
+        .Curved        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;        }
         #form1{
             position:center;
             text-align:center;
@@ -25,11 +26,11 @@
        <h2 style="color:#8B5E31">Add Telephone number</h2>
         <br />
         <br />
+        <img src="https://img.icons8.com/bubbles/100/000000/number-pad.png"/>
         <br />
         <br />
-        <asp:Label CssClass="Label1" ID="Label" runat="server" Text="Number :"></asp:Label>
-        <br />
-        <asp:TextBox ID="numberText" runat="server" ></asp:TextBox>
+      
+        <asp:TextBox CssClass="Curved" ID="numberText" runat="server" placeholder="Number"></asp:TextBox>
         <br />
         <br />
         <br />

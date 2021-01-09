@@ -6,11 +6,6 @@
 <head runat="server">
     <title></title>
     <style>
-          .button1 {
-
-              border-radius: 8px;
-          }
-
           .Label1 {
           
               color: #8B5E31;
@@ -31,26 +26,28 @@
             position: center;
   
           }
+          .Curved          {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;          }
+          .Curved1          {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;          }
 
     </style>
 </head>
 <body style="background-color: #F4E8E8">
     <form id="form1" runat="server">
-        <asp:Label ID="head" runat="server" Text="Welcome to GUCera !"></asp:Label>
+        <h1 style="color:#8B5E31">Welcome to GUCera !</h1>
         <br />
         <br />
         <img src="https://img.icons8.com/bubbles/100/000000/lock.png"/>      
         <br />
         <asp:Label CssClass="Label1" runat="server" Text="Username :"></asp:Label> 
         <br />
-        <asp:TextBox ID="usernameText" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass=Curved ID="usernameText" runat="server"></asp:TextBox>
         <br />
         <asp:Label CssClass="Label1" runat="server" Text="Password :"></asp:Label> 
         <br />
-        <asp:TextBox ID="passwordText" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:TextBox CssClass="Curved" ID="passwordText" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="logIn" CssClass="button1" runat="server" style="color: #8B5E31; font-weight: 700; background-color: #71A2A6" Text="Login" OnClick="logIn_Click" />
+        <asp:Button CssClass="Curved1" ID="logIn" runat="server"  Text="Login" OnClick="logIn_Click" />
         <br />
         <br />
         <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>

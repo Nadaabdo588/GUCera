@@ -12,7 +12,8 @@ namespace GUCera
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Text = "Your ID is " + Session["id"];
-            if((int)Session["type"]==0)
+
+            if ((int)Session["type"]==0)
 
             {
                 Response.Redirect("InstructorHome.aspx");

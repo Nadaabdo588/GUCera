@@ -16,7 +16,6 @@ namespace GUCera
 
         protected void profile_Click(object sender, ImageClickEventArgs e)
         {
-            int id = (int)Session["user"];
             Response.Redirect("StudentProfile.aspx" );
         }
         protected void courses_Click(object sender, ImageClickEventArgs e)
@@ -26,16 +25,13 @@ namespace GUCera
 
         protected void creditcards_Click(object sender, ImageClickEventArgs e)
         {
-            //String id =Request.QueryString["id"];
-            String id = "1";
             Response.Redirect("MyCreditCards.aspx" );
 
         }
 
         protected void promocodes_Click(object sender, ImageClickEventArgs e)
         {
-            String id =Request.QueryString["id"];
-            Response.Redirect("MyPromoCodes.aspx?id=" + id);
+            Response.Redirect("MyPromoCodes.aspx?id=" );
         }
     }
 }

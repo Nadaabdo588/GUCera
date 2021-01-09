@@ -15,15 +15,14 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //int sid = Int16.Parse(Request.QueryString["ID"]);
-            int sid = 1;
+            int id = (int)Session["user"];
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
             SqlConnection conn = new SqlConnection(connStr);
 
             SqlCommand viewProfileProc = new SqlCommand("viewMyProfile", conn);
             viewProfileProc.CommandType = CommandType.StoredProcedure;
-            viewProfileProc.Parameters.Add(new SqlParameter("@id", sid));
+            viewProfileProc.Parameters.Add(new SqlParameter("@id", id));
 
             conn.Open();
             SqlDataReader reader = viewProfileProc.ExecuteReader(CommandBehavior.CloseConnection);

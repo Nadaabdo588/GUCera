@@ -14,15 +14,13 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // int sid = Int32.Parse(Request.QueryString["id"]);
-            int sid = 1;
-
+            int id = (int)Session["user"];
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
             SqlConnection conn = new SqlConnection(connStr);
 
             SqlCommand viewPromocode = new SqlCommand("viewPromocode", conn);
             viewPromocode.CommandType = CommandType.StoredProcedure;
-            viewPromocode.Parameters.Add(new SqlParameter("@sid", sid));
+            viewPromocode.Parameters.Add(new SqlParameter("@sid", id));
 
             conn.Open();
             SqlDataReader reader = viewPromocode.ExecuteReader(CommandBehavior.CloseConnection);

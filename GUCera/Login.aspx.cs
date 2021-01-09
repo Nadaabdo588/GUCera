@@ -15,6 +15,7 @@ namespace GUCera
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["number"] = 0;
+            Session["card"] = 0;
         }
 
         protected void logIn_Click(object sender, EventArgs e)

@@ -19,14 +19,13 @@
             position: center;
  
         }
-        .button1 {
-            border-radius: 8px;
-        }
+      
         .Label1{
               color: #8B5E31; 
               font-weight: 700;
         }
-
+        .Curved        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;        }
+        .Curved1        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
     </style>
 </head>
 <body style="background-color:#F4E8E8">       
@@ -36,28 +35,23 @@
         <img src="https://img.icons8.com/bubbles/100/000000/bank-card-back-side.png"/>
         <br />
         <br />
-        <asp:Label CssClass="Label1" runat="server" Text="Credit card number :"></asp:Label>
-        &nbsp;<br />
-        <asp:TextBox ID="ccn" runat="server" MaxLength="15"></asp:TextBox>
+       
+        <asp:TextBox CssClass="Curved" ID="ccn" runat="server" MaxLength="15" placeholder="Credit card number"></asp:TextBox>
         <br />
         <br />
-        <asp:Label CssClass="Label1" runat="server" Text="Card holder name :"></asp:Label>
-        <br />
-        <asp:TextBox ID="hname" runat="server" MaxLength="16"></asp:TextBox>
-        <br />
-        <br />
-        <asp:Label CssClass="Label1" runat="server"  Text="Expiry date :"></asp:Label> 
-        <br />
-        <asp:TextBox ID="date" runat="server"></asp:TextBox>
+      
+        <asp:TextBox CssClass="Curved" ID="hname" runat="server" MaxLength="16" placeholder="Card holder name"></asp:TextBox>
         <br />
         <br />
-        <asp:Label CssClass="Label1" runat="server" Text="CVV number :"></asp:Label>
+     
+        <asp:TextBox CssClass="Curved" ID="date" runat="server" placeholder="Expiry date"></asp:TextBox>
         <br />
-        <asp:TextBox ID="cvv" runat="server" MaxLength="3" ></asp:TextBox>
+        <br />
+        <asp:TextBox CssClass="Curved" ID="cvv" runat="server" MaxLength="3" placeholder="CVV" ></asp:TextBox>
         <br />
         <br />
         <br />
-        <asp:Button ID="submitC" CssClass="button1" runat="server" style="color: #8B5E31; font-weight: 700; background-color: #71A2A6" Text="Add credit card" OnClick="submitC_Click" />
+        <asp:Button ID="submitC" CssClass="Curved1" runat="server" Text="Add credit card" OnClick="submitC_Click" />
         <br />
         <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>
 
