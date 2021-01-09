@@ -31,7 +31,7 @@ namespace GUCera
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
             SqlConnection conn = new SqlConnection(connStr);
 
-            SqlCommand instructorRegisterProc = new SqlCommand("instructiorRegister", conn);
+            SqlCommand instructorRegisterProc = new SqlCommand("instructorRegister", conn);
             instructorRegisterProc.CommandType = CommandType.StoredProcedure;
             instructorRegisterProc.Parameters.Add(new SqlParameter("@first_name", firstname));
             instructorRegisterProc.Parameters.Add(new SqlParameter("@last_name", lastname));

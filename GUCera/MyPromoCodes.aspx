@@ -19,6 +19,7 @@
         .Label2{
             color:#71A2A6; 
         }
+
     </style>
 </head>
 <body style="background-color: #F4E8E8">
