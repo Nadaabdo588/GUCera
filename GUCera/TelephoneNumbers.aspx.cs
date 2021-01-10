@@ -14,11 +14,7 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["number"] == null)
-            {
-                Session["number"] = 0;
-                Session["user"] = 1;
-            }
+           
             if((int)Session["number"]==1)
             {
                 error.Visible = true;
