@@ -68,7 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AceeptedCourses.aspx" />
+    <Content Include="AddAssignment.aspx" />
+    <Content Include="AddCourse.aspx" />
     <Content Include="CourseInfo.aspx" />
+    <Content Include="InstructorHome.aspx" />
     <Content Include="LoadingPage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MyCreditCards.aspx" />
@@ -88,12 +91,33 @@
     <Compile Include="AceeptedCourses.aspx.designer.cs">
       <DependentUpon>AceeptedCourses.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddAssignment.aspx.cs">
+      <DependentUpon>AddAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAssignment.aspx.designer.cs">
+      <DependentUpon>AddAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCourse.aspx.cs">
+      <DependentUpon>AddCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCourse.aspx.designer.cs">
+      <DependentUpon>AddCourse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CourseInfo.aspx.cs">
       <DependentUpon>CourseInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CourseInfo.aspx.designer.cs">
       <DependentUpon>CourseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorHome.aspx.cs">
+      <DependentUpon>InstructorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorHome.aspx.designer.cs">
+      <DependentUpon>InstructorHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoadingPage.aspx.cs">
       <DependentUpon>LoadingPage.aspx</DependentUpon>

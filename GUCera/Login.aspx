@@ -38,13 +38,11 @@
         <br />
         <img src="https://img.icons8.com/bubbles/100/000000/lock.png"/>      
         <br />
-        <asp:Label CssClass="Label1" runat="server" Text="Username :"></asp:Label> 
         <br />
-        <asp:TextBox CssClass=Curved ID="usernameText" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass=Curved ID="usernameText" runat="server" Placeholder ="Username"></asp:TextBox>
         <br />
-        <asp:Label CssClass="Label1" runat="server" Text="Password :"></asp:Label> 
         <br />
-        <asp:TextBox CssClass="Curved" ID="passwordText" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:TextBox CssClass="Curved" ID="passwordText" runat="server" Placeholder ="Password" TextMode="Password"></asp:TextBox>
         <br />
         <br />
         <asp:Button CssClass="Curved1" ID="logIn" runat="server"  Text="Login" OnClick="logIn_Click" />

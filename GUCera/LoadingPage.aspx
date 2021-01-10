@@ -24,7 +24,7 @@
         <asp:Label CssClass="Label1" ID="Label1" runat="server" ></asp:Label>
         <br />
         <br />
-        <asp:Button CssClass="Curved1" ID="Button1" runat="server" Text="Go home" />
+        <asp:Button CssClass="Curved1" ID="Button1" runat="server" Text="Go home" OnClick="Button1_Click" />
     </form>
 </body>
 </html>

@@ -36,6 +36,8 @@ namespace GUCera
 
         protected void telephone_Click(object sender, ImageClickEventArgs e)
         {
+            Session["number"] = 0;
+            Session["user"] = 1;
             Response.Redirect("TelephoneNumbers.aspx");
         }
     }

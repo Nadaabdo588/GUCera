@@ -11,13 +11,19 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "Your ID is " + Session["id"];
+            Label1.Text = "Your ID is " + Session["user"];
 
-            if ((int)Session["type"]==0)
+          
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if ((int)Session["type"] == 0)
 
             {
                 Response.Redirect("InstructorHome.aspx");
-            }else
+            }
+            else
             {
                 Response.Redirect("StudentHome.aspx");
             }
