@@ -71,7 +71,9 @@
     <Content Include="AddAssignment.aspx" />
     <Content Include="AddCourse.aspx" />
     <Content Include="CourseInfo.aspx" />
+    <Content Include="GradeAssignment.aspx" />
     <Content Include="InstructorHome.aspx" />
+    <Content Include="IssueCertificate.aspx" />
     <Content Include="LoadingPage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MyCreditCards.aspx" />
@@ -112,12 +114,26 @@
     <Compile Include="CourseInfo.aspx.designer.cs">
       <DependentUpon>CourseInfo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GradeAssignment.aspx.cs">
+      <DependentUpon>GradeAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradeAssignment.aspx.designer.cs">
+      <DependentUpon>GradeAssignment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InstructorHome.aspx.cs">
       <DependentUpon>InstructorHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="InstructorHome.aspx.designer.cs">
       <DependentUpon>InstructorHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueCertificate.aspx.cs">
+      <DependentUpon>IssueCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueCertificate.aspx.designer.cs">
+      <DependentUpon>IssueCertificate.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoadingPage.aspx.cs">
       <DependentUpon>LoadingPage.aspx</DependentUpon>

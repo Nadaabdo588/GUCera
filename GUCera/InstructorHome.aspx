@@ -41,17 +41,22 @@
                 <asp:Label ID="Label3" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add Course"></asp:Label>
             </div> 
             <div class="block" >
-                <asp:ImageButton ID="promocodes" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/task.png" OnClick="promocodes_Click" />
+                <asp:ImageButton ID="promocodes" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/task.png" OnClick="addAssignment_Click" />
                 <br />
                 <asp:Label ID="Label5" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add Assignment"></asp:Label>
             </div>
              <div class="block" >
-                 <asp:ImageButton ID="creditcards" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/bank-card-back-side.png" />
+                 <asp:ImageButton ID="creditcards" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/report-card.png" OnClick="gradeAssignments_Click" />
                  <br />
-                 <asp:Label ID="Label4" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add credit card"></asp:Label>
+                 <asp:Label ID="Label4" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Grade Assignment"></asp:Label>
             </div>
             <div class="block" >
-                <asp:ImageButton ID="ImageButton1" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/number-pad.png" />
+                 <asp:ImageButton ID="certificate" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/certificate.png" OnClick="certificate_Click" />
+                 <br />
+                 <asp:Label ID="Label2" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Issue Certificate"></asp:Label>
+            </div>
+            <div class="block" >
+                <asp:ImageButton ID="ImageButton1" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/number-pad.png" OnClick="telephone_Click" />
                 <br />
                 <asp:Label ID="Label1" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add telephone number"></asp:Label>
 
