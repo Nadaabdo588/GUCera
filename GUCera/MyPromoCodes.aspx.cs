@@ -35,12 +35,16 @@ namespace GUCera
 
                 Label issueDate = new Label();
                 issueDate.CssClass = "Label2";
-                // issueDate.Text = reader.GetDateTime(reader.GetOrdinal("issueDate")).ToString();
+                DateTime dt2 = reader.GetDateTime(reader.GetOrdinal("expiryDate"));
+                String x2 = dt2.ToString();
+                issueDate.Text = x2;
 
                 Label expiryDate = new Label();
                 expiryDate.CssClass = "Label2";
-                // expiryDate.Text = reader.GetDateTime(reader.GetOrdinal("expiryDate")).ToString();
-
+                DateTime dt = reader.GetDateTime(reader.GetOrdinal("expiryDate"));
+                String x = dt.ToString();
+                expiryDate.Text = x;
+              
                 Label discount = new Label();
                 discount.CssClass = "Label2";
                 discount.Text = reader.GetDecimal(reader.GetOrdinal("discount")).ToString();
@@ -75,13 +79,13 @@ namespace GUCera
                 form1.Controls.Add(new LiteralControl("<br />"));
                 form1.Controls.Add(i);
                 form1.Controls.Add(new LiteralControl("&nbsp"));
-                //  form1.Controls.Add(issueDate);
+                form1.Controls.Add(issueDate);
 
                 ex.Text = "Expiry date :";
                 form1.Controls.Add(new LiteralControl("<br />"));
                 form1.Controls.Add(ex);
                 form1.Controls.Add(new LiteralControl("&nbsp"));
-                //form1.Controls.Add(expiryDate);
+                form1.Controls.Add(expiryDate);
 
                 d.Text = "Discount :";
                 form1.Controls.Add(new LiteralControl("<br />"));
