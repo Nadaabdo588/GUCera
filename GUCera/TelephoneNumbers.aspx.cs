@@ -26,18 +26,26 @@ namespace GUCera
         protected void Button1_Click(object sender, EventArgs e)
         {
             String number = numberText.Text;
-            String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
-            SqlConnection conn = new SqlConnection(connStr);
-            SqlCommand addMobileProc = new SqlCommand("addMobile", conn);
-            addMobileProc.CommandType = CommandType.StoredProcedure;
-            addMobileProc.Parameters.Add(new SqlParameter("@ID",(int )Session["user"]));
-            addMobileProc.Parameters.Add(new SqlParameter("@mobile_number", number));
+            if (number.Length == 0)
+            {
+                error.Visible = true;
+                error.Text = "Please enter the number ";
+            }
+            else
+            {
+                String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
+                SqlConnection conn = new SqlConnection(connStr);
+                SqlCommand addMobileProc = new SqlCommand("addMobile", conn);
+                addMobileProc.CommandType = CommandType.StoredProcedure;
+                addMobileProc.Parameters.Add(new SqlParameter("@ID", (int)Session["user"]));
+                addMobileProc.Parameters.Add(new SqlParameter("@mobile_number", number));
 
-            conn.Open();
-            addMobileProc.ExecuteNonQuery();
-            conn.Close();
-            Session["number"] = 1;
-            Response.Redirect("TelephoneNumbers.aspx");
+                conn.Open();
+                addMobileProc.ExecuteNonQuery();
+                conn.Close();
+                Session["number"] = 1;
+                Response.Redirect("TelephoneNumbers.aspx");
+            }
         }
     }
 }
