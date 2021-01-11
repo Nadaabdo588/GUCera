@@ -70,6 +70,7 @@
     <Content Include="AceeptedCourses.aspx" />
     <Content Include="AddAssignment.aspx" />
     <Content Include="AddCourse.aspx" />
+    <Content Include="AdminHome.aspx" />
     <Content Include="EnrollPage.aspx" />
     <Content Include="GradeAssignment.aspx" />
     <Content Include="InstructorHome.aspx" />
@@ -78,11 +79,13 @@
     <Content Include="Login.aspx" />
     <Content Include="MyCreditCards.aspx" />
     <Content Include="MyPromoCodes.aspx" />
+    <Content Include="NonAcceptedCourses.aspx" />
     <Content Include="RegisterInstructor.aspx" />
     <Content Include="RegisterStudent.aspx" />
     <Content Include="StudentHome.aspx" />
     <Content Include="Studentprofile.aspx" />
     <Content Include="TelephoneNumbers.aspx" />
+    <Content Include="ViewdCourses.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +109,13 @@
     </Compile>
     <Compile Include="AddCourse.aspx.designer.cs">
       <DependentUpon>AddCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="EnrollPage.aspx.cs">
       <DependentUpon>EnrollPage.aspx</DependentUpon>
@@ -163,6 +173,13 @@
     <Compile Include="MyPromoCodes.aspx.designer.cs">
       <DependentUpon>MyPromoCodes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NonAcceptedCourses.aspx.cs">
+      <DependentUpon>NonAcceptedCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NonAcceptedCourses.aspx.designer.cs">
+      <DependentUpon>NonAcceptedCourses.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterInstructor.aspx.cs">
       <DependentUpon>RegisterInstructor.aspx</DependentUpon>
@@ -198,6 +215,13 @@
     </Compile>
     <Compile Include="TelephoneNumbers.aspx.designer.cs">
       <DependentUpon>TelephoneNumbers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewdCourses.aspx.cs">
+      <DependentUpon>ViewdCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewdCourses.aspx.designer.cs">
+      <DependentUpon>ViewdCourses.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
