@@ -70,7 +70,7 @@
     <Content Include="AceeptedCourses.aspx" />
     <Content Include="AddAssignment.aspx" />
     <Content Include="AddCourse.aspx" />
-    <Content Include="CourseInfo.aspx" />
+    <Content Include="EnrollPage.aspx" />
     <Content Include="GradeAssignment.aspx" />
     <Content Include="InstructorHome.aspx" />
     <Content Include="IssueCertificate.aspx" />
@@ -107,12 +107,12 @@
     <Compile Include="AddCourse.aspx.designer.cs">
       <DependentUpon>AddCourse.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CourseInfo.aspx.cs">
-      <DependentUpon>CourseInfo.aspx</DependentUpon>
+    <Compile Include="EnrollPage.aspx.cs">
+      <DependentUpon>EnrollPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CourseInfo.aspx.designer.cs">
-      <DependentUpon>CourseInfo.aspx</DependentUpon>
+    <Compile Include="EnrollPage.aspx.designer.cs">
+      <DependentUpon>EnrollPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="GradeAssignment.aspx.cs">
       <DependentUpon>GradeAssignment.aspx</DependentUpon>

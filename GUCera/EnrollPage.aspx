@@ -6,8 +6,21 @@
 <head runat="server">
     <title></title>
     <style>
-        .Curved1        {        	-webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
-        .Curved        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;        }
+        .Curved1
+        {
+        	-webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 30px;
+            color: #8B5E31; 
+            font-weight: 700; 
+            background-color: #71A2A6;
+        }
+        .Curved
+        {
+    	    -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 30px;
+        }
         #form1{
             position:center;
             text-align:center;
@@ -32,7 +45,7 @@
             <asp:Button ID="enrollButton" runat="server" Text="Enroll" CssClass="Curved1" OnClick="enrollButton_Click" />
         <br />
         <br />
-        <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>
+           <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>
 
     </form>
 </body>
