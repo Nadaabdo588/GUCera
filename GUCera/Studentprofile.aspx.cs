@@ -36,7 +36,7 @@ namespace GUCera
                 //bool g =reader.GetBoolean(reader.GetOrdinal("gender"));
                 byte[] g = (byte[])reader["gender"];
                 String gender = "Male";
-                if (g[0]==0)
+                if (g[0]==1)
                     gender = "Female";
                 Gender.Text = gender;
                 Address.Text = reader.GetString(reader.GetOrdinal("address"));

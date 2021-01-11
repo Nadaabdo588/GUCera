@@ -19,21 +19,21 @@ namespace GUCera
 
         protected void enrollButton_Click(object sender, EventArgs e)
         {
-            int sid = (int)Session["sid"];
-            int cid = Int32.Parse(cidText.Text);
-            int instID = Int32.Parse(instIdText.Text);
-            if (cid.ToString().Length == 0)
+            
+            if (cidText.Text.Length == 0)
             {
                 error.Visible = true;
                 error.Text = "Please enter a valid course ID ";
             }
-            else if (instID.ToString().Length == 0)
+            else if (instIdText.Text.Length == 0)
             {
                 error.Visible = true;
                 error.Text = "Please enter a valid instructor ID ";
             }
             else
-            {
+            {   int sid = (int)Session["user"];
+                int cid = Int32.Parse(cidText.Text);
+                int instID = Int32.Parse(instIdText.Text);
                 String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
                 SqlConnection conn = new SqlConnection(connStr);
                 SqlCommand enrollInCourseProc = new SqlCommand("enrollInCourse", conn);

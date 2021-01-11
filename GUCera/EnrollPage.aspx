@@ -26,6 +26,11 @@
             text-align:center;
             height:100%;
         }
+        .Label1 {
+          
+              color: #8B5E31;
+              font-weight: 700;
+        }
      
     </style>
 </head>

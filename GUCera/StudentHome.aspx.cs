@@ -31,13 +31,12 @@ namespace GUCera
 
         protected void promocodes_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("MyPromoCodes.aspx?id=" );
+            Response.Redirect("MyPromoCodes.aspx" );
         }
 
         protected void telephone_Click(object sender, ImageClickEventArgs e)
         {
             Session["number"] = 0;
-            Session["user"] = 1;
             Response.Redirect("TelephoneNumbers.aspx");
         }
     }

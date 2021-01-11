@@ -97,13 +97,8 @@ namespace GUCera
         }
         protected void enroll_Click(object sender, EventArgs e)
         {
-            String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
-            SqlConnection conn = new SqlConnection(connStr);
-
-            SqlCommand viewProfileProc = new SqlCommand("availableCourses", conn);
-            viewProfileProc.CommandType = CommandType.StoredProcedure;
-
+            Response.Redirect("EnrollPage.aspx");
         }
     
         
