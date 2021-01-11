@@ -15,7 +15,8 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id = (int)Session["user"];
+            int id =(int)(Session["user"]);
+
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
             SqlConnection conn = new SqlConnection(connStr);
