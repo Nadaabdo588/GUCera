@@ -19,7 +19,15 @@
         .Label2{
             color:#71A2A6; 
         }
-        .Curved1        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
+        .Curved1
+        {
+    	    -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 30px;
+            color: #8B5E31; 
+            font-weight: 700; 
+            background-color: #71A2A6;
+        }
 
     </style>
 </head>
