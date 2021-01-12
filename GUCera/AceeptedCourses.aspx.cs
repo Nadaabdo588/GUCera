@@ -98,7 +98,7 @@ namespace GUCera
         protected void enroll_Click(object sender, EventArgs e)
         {
 
-            Response.Redirect("EnrollPage.aspx");
+            Response.Redirect("EnrollPage.aspx?cid="+((Button)sender).ID);
         }
     
         
