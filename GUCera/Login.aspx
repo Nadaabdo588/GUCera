@@ -52,7 +52,7 @@
         <img src="https://img.icons8.com/bubbles/100/000000/lock.png"/>      
         <br />
         <br />
-        <asp:TextBox CssClass="Curved" ID="usernameText" runat="server" Placeholder ="Username"></asp:TextBox>
+        <asp:TextBox CssClass="Curved" ID="usernameText" runat="server" Placeholder ="Username" ></asp:TextBox>
         <br />
         <br />
         <asp:TextBox CssClass="Curved" ID="passwordText" runat="server" Placeholder ="Password" TextMode="Password"></asp:TextBox>

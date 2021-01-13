@@ -31,10 +31,20 @@ namespace GUCera
                  creditHours, price, content, accepted
                  */
                 String cN = rdr.GetString(rdr.GetOrdinal("name"));
-                String cH = rdr.GetString(rdr.GetOrdinal("creditHours"));
-                String p = rdr.GetString(rdr.GetOrdinal("price"));
-                String c = rdr.GetString(rdr.GetOrdinal("content"));
-                String a = rdr.GetString(rdr.GetOrdinal("accepted"));
+                String cH = rdr.GetInt32(rdr.GetOrdinal("creditHours")).ToString();
+                String p = rdr.GetDecimal(rdr.GetOrdinal("price")).ToString();
+                String c = "";
+                if (!rdr.IsDBNull(rdr.GetOrdinal("content")))
+
+                     c = rdr.GetString(rdr.GetOrdinal("content"));
+                Boolean bit = false;
+                if (!rdr.IsDBNull(rdr.GetOrdinal("accepted")))
+
+                     bit = rdr.GetBoolean(rdr.GetOrdinal("accepted"));
+                String a = "False";
+                if (bit)
+                    a = "True";
+         
                 String htmlLine = "<tr>" + "<th> " + cN + "</th>" + "<th> " + cH + "</th>" + "<th> " + p + "</th>" + "<th> " + c + "</th>" + "<th> " + a + "</th>"+"</tr>";
                 sb.Append(htmlLine);
             }
