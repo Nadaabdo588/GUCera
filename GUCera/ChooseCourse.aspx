@@ -34,7 +34,7 @@
         <br />
         <br />
         <br />
-        <asp:Button CssClass="Curved1" ID="Button1" runat="server" Text="Add number" OnClick="Button1_Click" />
+        <asp:Button CssClass="Curved1" ID="Button1" runat="server" Text="Choose" OnClick="Button1_Click" />
         <br />
         <br />
         <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>
