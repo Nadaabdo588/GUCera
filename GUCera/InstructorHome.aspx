@@ -45,10 +45,21 @@
                 <br />
                 <asp:Label ID="Label5" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add Assignment"></asp:Label>
             </div>
+            <div class="block" >
+                <asp:ImageButton ID="submittedAssignments" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/task.png" OnClick="submittedAssignments_Click" />
+                <br />
+                <asp:Label ID="Label6" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="View Submitted Assignments"></asp:Label>
+            </div>
              <div class="block" >
                  <asp:ImageButton ID="creditcards" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/report-card.png" OnClick="gradeAssignments_Click" />
                  <br />
                  <asp:Label ID="Label4" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Grade Assignment"></asp:Label>
+            </div>
+            
+             <div class="block" >
+                 <asp:ImageButton ID="feedbacks" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/speech-bubble.png" OnClick="feedbacks_Click" />
+                 <br />
+                 <asp:Label ID="Label7" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="View Feedbacks"></asp:Label>
             </div>
             <div class="block" >
                  <asp:ImageButton ID="certificate" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/certificate.png" OnClick="certificate_Click" />
