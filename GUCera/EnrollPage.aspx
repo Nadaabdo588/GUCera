@@ -26,24 +26,27 @@
             text-align:center;
             height:100%;
         }
+        .Label1 {
+          
+              color: #8B5E31;
+              font-weight: 700;
+        }
      
     </style>
 </head>
 <body style="background-color: #F4E8E8">
     <form id="form1" runat="server">
-            <h1 style="color:#8B5E31">Enrollment details</h1>  
+            <h1 style="color:#8B5E31">Choose an instructor to enroll with</h1>  
             <br />
             <br />
             <img src="https://img.icons8.com/bubbles/100/000000/book-reading.png"/><br />
             <br />
-            <asp:TextBox ID="cidText" runat="server" CssClass="Curved" placeholder="Course ID"></asp:TextBox>
-            <br />
-            <br />
-            <asp:TextBox ID="instIdText" runat="server" CssClass="Curved" placeholder="Instructor ID"></asp:TextBox>
+            <asp:DropDownList ID="dl" runat="server" CssClass="Curved"></asp:DropDownList>
             <br />
             <br />
             <asp:Button ID="enrollButton" runat="server" Text="Enroll" CssClass="Curved1" OnClick="enrollButton_Click" />
         <br />
+        
         <br />
            <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>
 

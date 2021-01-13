@@ -15,7 +15,8 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id = (int)Session["user"];
+            int id =(int)(Session["user"]);
+
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
             SqlConnection conn = new SqlConnection(connStr);
@@ -36,7 +37,7 @@ namespace GUCera
                 //bool g =reader.GetBoolean(reader.GetOrdinal("gender"));
                 byte[] g = (byte[])reader["gender"];
                 String gender = "Male";
-                if (g[0]==0)
+                if (g[0]==1)
                     gender = "Female";
                 Gender.Text = gender;
                 Address.Text = reader.GetString(reader.GetOrdinal("address"));
