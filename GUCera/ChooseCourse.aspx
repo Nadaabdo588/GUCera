@@ -23,7 +23,7 @@
 <body style="background-color: #F4E8E8">
     <form id="form1" runat="server">
         
-       <h1 style="color:#8B5E31">Add Telephone number</h1>
+       <h1 style="color:#8B5E31">Choose Course</h1>
         <br />
         <br />
         <img src="https://img.icons8.com/bubbles/100/000000/task.png"/>
