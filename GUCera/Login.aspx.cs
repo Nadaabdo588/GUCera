@@ -52,6 +52,7 @@ namespace GUCera
 
                 }else if(type.Value.ToString()=="1")
                 {
+                    Session["user"] = id;
                     Response.Redirect("AdminHome.aspx");
 
                 }
