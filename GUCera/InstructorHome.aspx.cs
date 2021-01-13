@@ -46,5 +46,18 @@ namespace GUCera
             Session["certificate"] = 0;
             Response.Redirect("IssueCertificate.aspx");
         }
+
+        protected void submittedAssignments_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["request"] = 1;
+            Response.Redirect("ChooseCourse.aspx");
+        }
+
+        protected void feedbacks_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["request"] = 0;
+            Response.Redirect("ChooseCourse.aspx");
+
+        }
     }
 }

@@ -71,6 +71,7 @@
     <Content Include="AddAssignment.aspx" />
     <Content Include="AddCourse.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="ChooseCourse.aspx" />
     <Content Include="EnrollPage.aspx" />
     <Content Include="GradeAssignment.aspx" />
     <Content Include="InstructorHome.aspx" />
@@ -85,6 +86,8 @@
     <Content Include="StudentHome.aspx" />
     <Content Include="Studentprofile.aspx" />
     <Content Include="TelephoneNumbers.aspx" />
+    <Content Include="ViewFeedbacks.aspx" />
+    <Content Include="ViewAssignments.aspx" />
     <Content Include="ViewdCourses.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -116,6 +119,13 @@
     </Compile>
     <Compile Include="AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseCourse.aspx.cs">
+      <DependentUpon>ChooseCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChooseCourse.aspx.designer.cs">
+      <DependentUpon>ChooseCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="EnrollPage.aspx.cs">
       <DependentUpon>EnrollPage.aspx</DependentUpon>
@@ -215,6 +225,20 @@
     </Compile>
     <Compile Include="TelephoneNumbers.aspx.designer.cs">
       <DependentUpon>TelephoneNumbers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFeedbacks.aspx.cs">
+      <DependentUpon>ViewFeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFeedbacks.aspx.designer.cs">
+      <DependentUpon>ViewFeedbacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAssignments.aspx.cs">
+      <DependentUpon>ViewAssignments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAssignments.aspx.designer.cs">
+      <DependentUpon>ViewAssignments.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewdCourses.aspx.cs">
       <DependentUpon>ViewdCourses.aspx</DependentUpon>
