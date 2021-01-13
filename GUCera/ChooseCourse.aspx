@@ -26,7 +26,7 @@
        <h1 style="color:#8B5E31">Choose Course</h1>
         <br />
         <br />
-        <img src="https://img.icons8.com/bubbles/100/000000/task.png"/>
+        <img src="https://img.icons8.com/bubbles/100/000000/book-reading.png"/>
         <br />
         <br />
       
