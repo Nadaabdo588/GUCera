@@ -47,6 +47,9 @@
             <asp:LinkButton ID="LinkButton3" runat="server" OnClick="issue">Issue</asp:LinkButton>
         </p>
         <p>
+            <asp:Label ID="errmsg" runat="server" Text="This field can not be empty"></asp:Label>
+        </p>
+        <p>
             &nbsp;</p>
     </form>
 </body>
