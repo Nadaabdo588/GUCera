@@ -60,6 +60,26 @@
                 <asp:Label ID="Label1" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add telephone number"></asp:Label>
 
             </div>
+            <div class="block" >
+                <asp:ImageButton ID="ImageButton6" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/book-reading.png" OnClick="myCources_Click"/>
+                <br />
+                <asp:Label ID="Label6" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="My Cources"></asp:Label>
+
+            </div>
+            
+            <div class="block" >
+                <asp:ImageButton ID="ImageButton7" runat="server" imageurl="https://img.icons8.com/cute-clipart/64/000000/feedback.png" OnClick="addFeedback_Click"/>
+                <br />
+                <asp:Label ID="Label7" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="Add Feedback"></asp:Label>
+
+            </div>
+
+            <div class="block" >
+                <asp:ImageButton ID="ImageButton8" runat="server" imageurl="https://img.icons8.com/doodle/48/000000/certificate.png" OnClick="ListCertificates_Click"/>
+                <br />
+                <asp:Label ID="Label8" runat="server" style="color: #8B5E31; font-weight: 700; font-size: large;" Text="My Certificates"></asp:Label>
+
+            </div>
         </div>
     
     </form>

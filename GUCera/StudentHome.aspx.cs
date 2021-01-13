@@ -39,5 +39,21 @@ namespace GUCera
             Session["number"] = 0;
             Response.Redirect("TelephoneNumbers.aspx");
         }
+
+        protected void myCources_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MyCourses.aspx");
+        }
+
+        protected void addFeedback_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["feedback"] = 0;
+            Response.Redirect("AddFeedback.aspx");
+        }
+
+        protected void ListCertificates_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("ListCertificates.aspx");
+        }
     }
 }

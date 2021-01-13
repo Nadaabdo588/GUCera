@@ -34,13 +34,23 @@ namespace GUCera
 
             SqlConnection conn = new SqlConnection(connStr);
 
+            SqlCommand FinalGrade = new SqlCommand("calculateFinalGrade", conn);
+            FinalGrade.CommandType = CommandType.StoredProcedure;
+            FinalGrade.Parameters.Add(new SqlParameter("@cid", cid));
+            FinalGrade.Parameters.Add(new SqlParameter("@sid", sid));
+            FinalGrade.Parameters.Add(new SqlParameter("@insId", id));
+
+
             SqlCommand IssueCertificate = new SqlCommand("InstructorIssueCertificateToStudent", conn);
             IssueCertificate.CommandType = CommandType.StoredProcedure;
             IssueCertificate.Parameters.Add(new SqlParameter("@cid", cid));
             IssueCertificate.Parameters.Add(new SqlParameter("@sid", sid));
             IssueCertificate.Parameters.Add(new SqlParameter("@insId", id));
             IssueCertificate.Parameters.Add(new SqlParameter("@issueDate", now));
+
+
             conn.Open();
+            FinalGrade.ExecuteNonQuery();
             IssueCertificate.ExecuteNonQuery();
             conn.Close();
             Session["Certificate"] = 1;

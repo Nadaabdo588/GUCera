@@ -19,7 +19,7 @@ namespace GUCera
             int cid = Int32.Parse(courseText.Text);
             Session["course"] = cid;
             if((int)Session["request"]==1)
-                Response.Redirect("ViewAssignments.aspx");
+                Response.Redirect("ViewsubAssignments.aspx");
             else
                 Response.Redirect("ViewFeedbacks.aspx");
         }
