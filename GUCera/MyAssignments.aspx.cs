@@ -70,23 +70,13 @@ namespace GUCera
                 form1.Controls.Add(type);
                 form1.Controls.Add(new LiteralControl("<br />"));
                    
-                SqlCommand viewAssignGrades = new SqlCommand("viewAssignGrades", conn);
-                viewAssignGrades.CommandType = CommandType.StoredProcedure;
-                viewAssignGrades.Parameters.Add(new SqlParameter("@assignnumber", reader.GetInt32(reader.GetOrdinal("assignmentNumber"))));
-                viewAssignGrades.Parameters.Add(new SqlParameter("@assignType", reader.GetString(reader.GetOrdinal("assignmenttype"))));
-                viewAssignGrades.Parameters.Add(new SqlParameter("@sid", sid));
-                viewAssignGrades.Parameters.Add(new SqlParameter("@cid", cid));
-
-                SqlParameter assignGrade = new SqlParameter();
-                assignGrade.ParameterName = "@assignGrade";
-                assignGrade.DbType = DbType.Int32;
-                assignGrade.Direction = ParameterDirection.Output;
-                viewAssignGrades.Parameters.Add(assignGrade);
-                viewAssignGrades.ExecuteNonQuery();
-                String Text = "Grade : '" + viewAssignGrades.Parameters["@assignGrade"].Value.ToString() + "'";
-                if (Text.Equals("Grade : ''"))
+                String query1 = "SELECT grade FROM StudentTakeAssignment WHERE sid = '" + sid + "' And cid = '" + cid + "' And assignmentNumber = '" + reader.GetInt32(reader.GetOrdinal("assignmentNumber")) + "' And assignmenttype = '" + reader.GetString(reader.GetOrdinal("assignmenttype")) + "'And grade is not null";
+                SqlCommand cmd1 = new SqlCommand(query1, conn);
+                SqlDataReader reader1 = cmd1.ExecuteReader();
+                String Text = "No Grade Yet";
+                while (reader1.Read())
                 {
-                    Text = "No Grade Yet";
+                    Text = "Grade : '" + reader1.GetDecimal(reader1.GetOrdinal("grade")).ToString() + "'";
                 }
                 Label g = new Label();
                 g.CssClass = "Label1";
