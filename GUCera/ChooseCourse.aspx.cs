@@ -16,12 +16,20 @@ namespace GUCera
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int cid = Int32.Parse(courseText.Text);
-            Session["course"] = cid;
-            if((int)Session["request"]==1)
-                Response.Redirect("ViewsubAssignments.aspx");
-            else
-                Response.Redirect("ViewFeedbacks.aspx");
+            try
+            {
+                int cid = Int32.Parse(courseText.Text);
+                Session["course"] = cid;
+                if ((int)Session["request"] == 1)
+                    Response.Redirect("ViewsubAssignments.aspx");
+                else
+                    Response.Redirect("ViewFeedbacks.aspx");
+            }
+            catch(Exception er)
+            {
+                error.Visible = true;
+                error.Text = "an error has occured";
+            }
         }
     }
 }

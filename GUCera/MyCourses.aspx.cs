@@ -46,16 +46,16 @@ namespace GUCera
                     nameLabel.Text = "Course Name :";
 
                     Label idValue = new Label();
-                    nameValue.CssClass = "Label2";
-                    nameValue.Text = cid.ToString();
+                    idValue.CssClass = "Label2";
+                    idValue.Text = cid.ToString();
 
                     Label idLabel = new Label();
-                    nameLabel.CssClass = "Label1";
-                    nameLabel.Text = "Course ID :";
+                    idLabel.CssClass = "Label1";
+                    idLabel.Text = "Course ID :";
 
                     Button viewNotSubmittedAssignments = new Button();
                     viewNotSubmittedAssignments.CssClass = "Curved1";
-                    viewNotSubmittedAssignments.Text = "View All Submitted Assignments";
+                    viewNotSubmittedAssignments.Text = "View All Assignments";
                     viewNotSubmittedAssignments.Click += viewNotSubmittedAssignments_Click;
                     viewNotSubmittedAssignments.ID = cid.ToString();
 
@@ -85,12 +85,10 @@ namespace GUCera
                     form1.Controls.Add(new LiteralControl("<br />"));
                     form1.Controls.Add(viewAssignmentsGrades);
                     form1.Controls.Add(new LiteralControl("<br />"));
-                    reader2.Close();
 
                 }
 
             }
-            reader.Close();
         }
 
         private void viewAssignmentsGrades_Click(object sender, EventArgs e)

@@ -25,36 +25,44 @@ namespace GUCera
 
         protected void submitC_Click(object sender, EventArgs e)
         {
-            int id = (int)Session["user"];
-            int cid = Int32.Parse(courseText.Text);
-            int sid = Int32.Parse(studentText.Text);
-            DateTime now = DateTime.Now;
+            try
+            {
+                int id = (int)Session["user"];
+                int cid = Int32.Parse(courseText.Text);
+                int sid = Int32.Parse(studentText.Text);
+                DateTime now = DateTime.Now;
 
-            String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
+                String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
-            SqlConnection conn = new SqlConnection(connStr);
+                SqlConnection conn = new SqlConnection(connStr);
 
-            SqlCommand FinalGrade = new SqlCommand("calculateFinalGrade", conn);
-            FinalGrade.CommandType = CommandType.StoredProcedure;
-            FinalGrade.Parameters.Add(new SqlParameter("@cid", cid));
-            FinalGrade.Parameters.Add(new SqlParameter("@sid", sid));
-            FinalGrade.Parameters.Add(new SqlParameter("@insId", id));
-
-
-            SqlCommand IssueCertificate = new SqlCommand("InstructorIssueCertificateToStudent", conn);
-            IssueCertificate.CommandType = CommandType.StoredProcedure;
-            IssueCertificate.Parameters.Add(new SqlParameter("@cid", cid));
-            IssueCertificate.Parameters.Add(new SqlParameter("@sid", sid));
-            IssueCertificate.Parameters.Add(new SqlParameter("@insId", id));
-            IssueCertificate.Parameters.Add(new SqlParameter("@issueDate", now));
+                SqlCommand FinalGrade = new SqlCommand("calculateFinalGrade", conn);
+                FinalGrade.CommandType = CommandType.StoredProcedure;
+                FinalGrade.Parameters.Add(new SqlParameter("@cid", cid));
+                FinalGrade.Parameters.Add(new SqlParameter("@sid", sid));
+                FinalGrade.Parameters.Add(new SqlParameter("@insId", id));
 
 
-            conn.Open();
-            FinalGrade.ExecuteNonQuery();
-            IssueCertificate.ExecuteNonQuery();
-            conn.Close();
-            Session["Certificate"] = 1;
-            Response.Redirect("IssueCertificate.aspx");
+                SqlCommand IssueCertificate = new SqlCommand("InstructorIssueCertificateToStudent", conn);
+                IssueCertificate.CommandType = CommandType.StoredProcedure;
+                IssueCertificate.Parameters.Add(new SqlParameter("@cid", cid));
+                IssueCertificate.Parameters.Add(new SqlParameter("@sid", sid));
+                IssueCertificate.Parameters.Add(new SqlParameter("@insId", id));
+                IssueCertificate.Parameters.Add(new SqlParameter("@issueDate", now));
+
+
+                conn.Open();
+                FinalGrade.ExecuteNonQuery();
+                IssueCertificate.ExecuteNonQuery();
+                conn.Close();
+                Session["Certificate"] = 1;
+                Response.Redirect("IssueCertificate.aspx");
+            }
+            catch(Exception er)
+            {
+                error.Visible = true;
+                error.Text = "an error has occured";
+            }
         }
     }
 }
