@@ -15,6 +15,15 @@
             <asp:Button ID="notacceptedC" runat="server" Text="View not Accepted Courses" OnClick="notacceptedC_Click" />
         </p>
         <p>
+            Add telephone number:-</p>
+        <p>
+            <asp:TextBox ID="mob" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton4" runat="server" OnClick="addNo_Click">Add</asp:LinkButton>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="sucadd" runat="server" Text="You successfully added a telephone number!"></asp:Label>
+        </p>
+        <p>
             Accept Course :-</p>
         <p>
             &nbsp;
@@ -22,6 +31,8 @@
             <asp:TextBox ID="courseId" runat="server" style="margin-left: 57px" Width="140px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="acceptC">   Accept course</asp:LinkButton>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="sucacc" runat="server" Text="You accepted the course!"></asp:Label>
         </p>
         <p>
             Create Promo Code :-</p>
@@ -35,6 +46,8 @@
             <asp:TextBox ID="discount" runat="server"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="LinkButton2" runat="server" OnClick="createP">Create</asp:LinkButton>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="succer" runat="server" Text="Promo code is created successfully!"></asp:Label>
         </p>
         <p>
             Issue Promo Code to a Student :-</p>
@@ -45,6 +58,8 @@
             <asp:TextBox ID="pid" runat="server"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="LinkButton3" runat="server" OnClick="issue">Issue</asp:LinkButton>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="suciss" runat="server" Text="Done!"></asp:Label>
         </p>
         <p>
             <asp:Label ID="errmsg" runat="server" Text="This field can not be empty"></asp:Label>

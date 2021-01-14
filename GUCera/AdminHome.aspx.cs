@@ -14,7 +14,11 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            errmsg.Visible = false;
+            sucadd.Visible = false;
+            succer.Visible = false;
+            sucacc.Visible = false;
+            suciss.Visible = false;
         }
 
         protected void viewC_Click(object sender, EventArgs e)
@@ -32,22 +36,26 @@ namespace GUCera
         {
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
             SqlConnection conn = new SqlConnection(connStr);
-            int adminid = (int)Session["user"];
+            
             if (courseId.Text.Length != 0)
             {
+                int adminid = (int)Session["user"];
                 int courseid = Int32.Parse(courseId.Text);
                 SqlCommand accCourse = new SqlCommand("AdminAcceptRejectCourse", conn);
                 accCourse.CommandType = CommandType.StoredProcedure;
                 accCourse.Parameters.Add(new SqlParameter("@adminid", adminid));
                 accCourse.Parameters.Add(new SqlParameter("@courseId", courseid));
                 errmsg.Visible = false;
-
+                sucacc.Visible = true;
                 conn.Open();
                 accCourse.ExecuteNonQuery();
                 conn.Close();
             }
             else
+            {
+                errmsg.Text = "Course ID field cannot be empty";
                 errmsg.Visible = true;
+            }
         }
 
         protected void createP(object sender, EventArgs e)
@@ -69,14 +77,16 @@ namespace GUCera
                 createPromo.Parameters.Add(new SqlParameter("@discount", dis));
                 createPromo.Parameters.Add(new SqlParameter("@adminId", adminid));
                 errmsg.Visible = false;
-
+                succer.Visible = true;
                 conn.Open();
                 createPromo.ExecuteNonQuery();
                 conn.Close();
             }
             else
+            {
+                errmsg.Text = "Promo code fields cannot be empty";
                 errmsg.Visible = true;
-
+            }
 
 
         }
@@ -93,12 +103,43 @@ namespace GUCera
                 issuePromo.Parameters.Add(new SqlParameter("@sid", studentid));
                 issuePromo.Parameters.Add(new SqlParameter("@pid", code));
                 errmsg.Visible = false;
+                suciss.Visible = true;
                 conn.Open();
                 issuePromo.ExecuteNonQuery();
                 conn.Close();
             }
             else
+            {
+                errmsg.Text = "You should specify the student id and the promo code";
                 errmsg.Visible = true;
+            }
+        }
+
+    
+        protected void addNo_Click(object sender, EventArgs e)
+        {
+            String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
+            SqlConnection conn = new SqlConnection(connStr);
+            if (mob.Text.Length!=0)
+            {
+                String mNo = mob.Text;
+                int adminid = (int)Session["user"];
+                String s = adminid.ToString();
+                SqlCommand addMob = new SqlCommand("addMobile", conn);
+                addMob.CommandType = CommandType.StoredProcedure;
+                addMob.Parameters.Add(new SqlParameter("@ID", s));
+                addMob.Parameters.Add(new SqlParameter("@mobile_number", mNo));
+                errmsg.Visible = false;
+                sucadd.Visible = true;
+                conn.Open();
+                addMob.ExecuteNonQuery();
+                conn.Close();
+            }
+            else
+            {
+                errmsg.Text = "Telephone number field cannot be empty";
+                errmsg.Visible = true;
+            }
         }
     }
 }
