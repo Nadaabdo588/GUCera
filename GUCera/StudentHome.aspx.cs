@@ -16,7 +16,7 @@ namespace GUCera
 
         protected void profile_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("StudentProfile.aspx" );
+            Response.Redirect("StudentProfile.aspx");
         }
         protected void courses_Click(object sender, ImageClickEventArgs e)
         {
@@ -25,19 +25,39 @@ namespace GUCera
 
         protected void creditcards_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("MyCreditCards.aspx" );
+            Response.Redirect("MyCreditCards.aspx");
 
         }
 
         protected void promocodes_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("MyPromoCodes.aspx" );
+            Response.Redirect("MyPromoCodes.aspx");
         }
 
         protected void telephone_Click(object sender, ImageClickEventArgs e)
         {
             Session["number"] = 0;
             Response.Redirect("TelephoneNumbers.aspx");
+        }
+        protected void myCources_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MyCourses.aspx");
+        }
+
+        protected void myAssignments_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MyAsignments.aspx");
+        }
+
+        protected void addFeedback_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["feedback"] = 0;
+            Response.Redirect("AddFeedback.aspx");
+        }
+
+        protected void ListCertificates_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("ListCertificates.aspx");
         }
     }
 }

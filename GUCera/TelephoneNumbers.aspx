@@ -4,33 +4,23 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>
-    </title>
-    <style>
-        .Curved1        {        	-webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
-        .Curved        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;        }
-        #form1{
-            position:center;
-            text-align:center;
-            height:100%;
-        }
-        .Label1{
-            color: #8B5E31; 
-            font-weight: 700;
-        }
-    </style>
+    <link rel="stylesheet" href="styles\style.css" type="text/css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
+    <title></title>
+   
 </head>
 <body style="background-color: #F4E8E8">
-    <form id="form1" runat="server">
-        
+
+    <form id="form1" runat="server">     
        <h1 style="color:#8B5E31">Add Telephone number</h1>
         <br />
         <br />
         <img src="https://img.icons8.com/bubbles/100/000000/number-pad.png"/>
         <br />
         <br />
-      
-        <asp:TextBox CssClass="Curved" ID="numberText" runat="server" placeholder="Number"></asp:TextBox>
+        <input type="text" class="Curved" id="numberText" name="numberText" placeholder="Number" required/>
         <br />
         <br />
         <br />
@@ -41,5 +31,7 @@
 
         
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
 </body>
 </html>

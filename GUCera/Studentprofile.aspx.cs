@@ -26,28 +26,24 @@ namespace GUCera
             viewProfileProc.Parameters.Add(new SqlParameter("@id", id));
 
             conn.Open();
-           // SqlDataReader reader = viewProfileProc.ExecuteReader(CommandBehavior.CloseConnection);
-           // SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True;User Instance=True");
-            SqlDataAdapter sda = new SqlDataAdapter(viewProfileProc);
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
-            DetailsView1.DataSource = ds;
-            DetailsView1.DataBind();
-          //  if (reader.Read())
+            SqlDataReader reader = viewProfileProc.ExecuteReader(CommandBehavior.CloseConnection);
+            SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True;User Instance=True");
+      
+           if (reader.Read())
             {
-              //  ID.Text = reader.GetInt32(reader.GetOrdinal("id")).ToString();
-              //  First_name.Text = reader.GetString(reader.GetOrdinal("firstName"));
-             //   Last_name.Text = reader.GetString(reader.GetOrdinal("lastName"));
-             //   Password.Text = reader.GetString(reader.GetOrdinal("password"));
-              //  Email.Text = reader.GetString(reader.GetOrdinal("email"));
-                //bool g =reader.GetBoolean(reader.GetOrdinal("gender"));
-              //  byte[] g = (byte[])reader["gender"];
-              //  String gender = "Male";
-               // if (g[0]==1)
-               //     gender = "Female";
-              //  Gender.Text = gender;
-              //  Address.Text = reader.GetString(reader.GetOrdinal("address"));
-               // GPA.Text = reader.GetDecimal(reader.GetOrdinal("gpa")).ToString();
+                ID.Text = reader.GetInt32(reader.GetOrdinal("id")).ToString();
+                First_name.Text = reader.GetString(reader.GetOrdinal("firstName"));
+                Last_name.Text = reader.GetString(reader.GetOrdinal("lastName"));
+                Password.Text = reader.GetString(reader.GetOrdinal("password"));
+                Email.Text = reader.GetString(reader.GetOrdinal("email"));
+               // bool g =reader.GetBoolean(reader.GetOrdinal("gender"));
+                byte[] g= (byte[])reader["gender"];
+                String gender = "Male";
+                if (g[0]==1)
+                gender = "Female";
+               Gender.Text = gender;
+               Address.Text = reader.GetString(reader.GetOrdinal("address"));
+               GPA.Text = reader.GetDecimal(reader.GetOrdinal("gpa")).ToString();
             }
 
 

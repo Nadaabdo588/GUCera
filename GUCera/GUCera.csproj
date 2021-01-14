@@ -83,6 +83,7 @@
     <Content Include="NonAcceptedCourses.aspx" />
     <Content Include="RegisterInstructor.aspx" />
     <Content Include="RegisterStudent.aspx" />
+    <Content Include="styles\style.css" />
     <Content Include="StudentHome.aspx" />
     <Content Include="Studentprofile.aspx" />
     <Content Include="TelephoneNumbers.aspx" />

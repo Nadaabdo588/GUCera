@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace GUCera
@@ -26,6 +27,8 @@ namespace GUCera
             SqlDataReader reader = viewPromocode.ExecuteReader(CommandBehavior.CloseConnection);
             while (reader.Read())
             {
+                HtmlGenericControl mydiv = new HtmlGenericControl("div");
+                mydiv.Attributes.Add("class", "col-6");
                 Image b = new Image();
                 b.ImageUrl = "https://img.icons8.com/bubbles/100/000000/transaction-list.png";
 
@@ -69,37 +72,38 @@ namespace GUCera
                 a.CssClass = "Label1";
 
                 c.Text = "Code : ";
-                form1.Controls.Add(b);
-                form1.Controls.Add(new LiteralControl("<br />"));
-                form1.Controls.Add(c);
-                form1.Controls.Add(new LiteralControl("&nbsp"));
-                form1.Controls.Add(code);
+                mydiv.Controls.Add(b);
+                mydiv.Controls.Add(new LiteralControl("<br />"));
+                mydiv.Controls.Add(c);
+                mydiv.Controls.Add(new LiteralControl("&nbsp"));
+                mydiv.Controls.Add(code);
 
                 i.Text = "Issue Date :";
-                form1.Controls.Add(new LiteralControl("<br />"));
-                form1.Controls.Add(i);
-                form1.Controls.Add(new LiteralControl("&nbsp"));
-                form1.Controls.Add(issueDate);
+                mydiv.Controls.Add(new LiteralControl("<br />"));
+                mydiv.Controls.Add(i);
+                mydiv.Controls.Add(new LiteralControl("&nbsp"));
+                mydiv.Controls.Add(issueDate);
 
                 ex.Text = "Expiry date :";
-                form1.Controls.Add(new LiteralControl("<br />"));
-                form1.Controls.Add(ex);
-                form1.Controls.Add(new LiteralControl("&nbsp"));
-                form1.Controls.Add(expiryDate);
+                mydiv.Controls.Add(new LiteralControl("<br />"));
+                mydiv.Controls.Add(ex);
+                mydiv.Controls.Add(new LiteralControl("&nbsp"));
+                mydiv.Controls.Add(expiryDate);
 
                 d.Text = "Discount :";
-                form1.Controls.Add(new LiteralControl("<br />"));
-                form1.Controls.Add(d);
-                form1.Controls.Add(new LiteralControl("&nbsp"));
-                form1.Controls.Add(discount);
+                mydiv.Controls.Add(new LiteralControl("<br />"));
+                mydiv.Controls.Add(d);
+                mydiv.Controls.Add(new LiteralControl("&nbsp"));
+                mydiv.Controls.Add(discount);
 
                 a.Text = "Admin Id :";
-                form1.Controls.Add(new LiteralControl("<br />"));
-                form1.Controls.Add(a);
-                form1.Controls.Add(new LiteralControl("&nbsp"));
-                form1.Controls.Add(adminId);
+                mydiv.Controls.Add(new LiteralControl("<br />"));
+                mydiv.Controls.Add(a);
+                mydiv.Controls.Add(new LiteralControl("&nbsp"));
+                mydiv.Controls.Add(adminId);
+                PlaceHolder1.Controls.Add(mydiv);
 
-                form1.Controls.Add(new LiteralControl("<hr />"));
+               // form1.Controls.Add(new LiteralControl("<hr />"));
 
 
                     

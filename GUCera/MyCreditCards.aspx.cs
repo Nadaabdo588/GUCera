@@ -14,28 +14,17 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if ((int)Session["card"] == 1)
-            {
-                error.Visible = true;
-                error.Text = "Credit Card is added Successfully";
-                Session["card"] = 0;
-            }
+            
         }
 
         protected void submitC_Click(object sender, EventArgs e)
         {
 
             int id = (int)Session["user"];
-            String number = ccn.Text;  
-            if (number.Length == 0)
-            {
-                error.Visible = true;
-                error.Text = "You should enter your credit card number";
-                return;
-            }
-            String holderName = hname.Text;
-            DateTime expirydate = DateTime.Parse(date.Text);
-            String cvvN = cvv.Text;
+            String number = Request.Form["cnn"];  
+            String holderName = Request.Form["hname"];
+            DateTime expirydate = DateTime.Parse(Request.Form["date"]);
+            String cvvN = Request.Form["cvv"];
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
             SqlConnection conn = new SqlConnection(connStr);
@@ -50,8 +39,8 @@ namespace GUCera
             conn.Open();
             addCreditCard.ExecuteNonQuery();
             conn.Close();
-            Session["card"] = 1;
-            Response.Redirect("MyCreditCards.aspx");
+            error.Visible = true;
+            error.Text = "Card is added successfully";
 
 
         }

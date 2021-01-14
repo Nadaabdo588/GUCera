@@ -4,50 +4,40 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+     <link rel="stylesheet" href="styles\style.css" type="text/css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
     <title></title>
-    <style>
-        #credit{
-            display: block;
-            text-align: center;
-            color: #8B5E31; 
-            font-weight: 700;
-            font-size: xx-large;
-        }
-        #form1{
-            height:100%;
-            text-align: center;  
-            position: center;
- 
-        }
-      
-        .Label1{
-              color: #8B5E31; 
-              font-weight: 700;
-        }
-        .Curved        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;        }
-        .Curved1        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
-    </style>
 </head>
 <body style="background-color:#F4E8E8">       
-    <asp:Label ID="credit" runat="server" Text="Credit Card details"></asp:Label>  
-    <form id="form1" runat="server">
+    <form id="form1" runat="server"> 
+
+        <h1 class="Label1">Credit Card details</h1>  
         <br />
         <img src="https://img.icons8.com/bubbles/100/000000/bank-card-back-side.png"/>
         <br />
         <br />
        
-        <asp:TextBox CssClass="Curved" ID="ccn" runat="server" MaxLength="15" placeholder="Credit card number"></asp:TextBox>
+        <%--<asp:TextBox CssClass="Curved" ID="ccn" runat="server" MaxLength="15" placeholder="Credit card number"></asp:TextBox>--%>
+        <input type="text" id="cnn" name="cnn" class="Curved" placeholder="Credit card number" required />
         <br />
         <br />
       
-        <asp:TextBox CssClass="Curved" ID="hname" runat="server" MaxLength="16" placeholder="Card holder name"></asp:TextBox>
+        <%--<asp:TextBox CssClass="Curved" ID="hname" runat="server" MaxLength="16" placeholder="Card holder name"></asp:TextBox>--%>
+        <input type="text" id="hname" name="hname" class="Curved" placeholder="Card holder name" required />
+
         <br />
         <br />
      
-        <asp:TextBox CssClass="Curved" ID="date" runat="server" placeholder="Expiry date"></asp:TextBox>
+        <%--<asp:TextBox CssClass="Curved" ID="date" runat="server" placeholder="Expiry date"></asp:TextBox>--%>
+        <input type="text" id="date" name="date" class="Curved" placeholder="Expiry date" required />
+
         <br />
         <br />
-        <asp:TextBox CssClass="Curved" ID="cvv" runat="server" MaxLength="3" placeholder="CVV" ></asp:TextBox>
+        <%--<asp:TextBox CssClass="Curved" ID="cvv" runat="server" MaxLength="3" placeholder="CVV" ></asp:TextBox>--%>
+        <input type="text" id="cvv" name="cvv" class="Curved" placeholder="CVV" required />
+
         <br />
         <br />
         <br />
@@ -57,5 +47,7 @@
 
 
     &nbsp;</form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
 </body>
 </html>

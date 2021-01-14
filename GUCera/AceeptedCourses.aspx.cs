@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace GUCera
@@ -34,7 +35,11 @@ namespace GUCera
                 SqlDataReader reader2 = cmd.ExecuteReader();
                 if(reader2.Read())
                 {
-                    int id = reader2.GetInt32(reader2.GetOrdinal("id"));
+                    HtmlGenericControl myDiv = new HtmlGenericControl("div");
+                    myDiv.Attributes.Add("class","col-6");
+                    int id = reader2.GetInt32(reader2.GetOrdinal("id")); 
+                    myDiv.ID =id.ToString()+"mydiv";
+
                     int credit= reader2.GetInt32(reader2.GetOrdinal("creditHours"));
                     decimal price = reader2.GetDecimal(reader2.GetOrdinal("price"));
                     Label nameValue = new Label();
@@ -67,28 +72,29 @@ namespace GUCera
                     enroll.Click += enroll_Click;
                     enroll.ID = id.ToString();
 
-                    form1.Controls.Add(b);
-                    form1.Controls.Add(new LiteralControl("<br />"));
-                    form1.Controls.Add(nameLabel);
-                    form1.Controls.Add(new LiteralControl("&nbsp"));
-                    form1.Controls.Add(nameValue);
-                    form1.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(b);
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(nameLabel);
+                    myDiv.Controls.Add(new LiteralControl("&nbsp"));
+                    myDiv.Controls.Add(nameValue);
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
 
-                    form1.Controls.Add(new LiteralControl("<br />"));
-                    form1.Controls.Add(creditLabel);
-                    form1.Controls.Add(new LiteralControl("&nbsp"));
-                    form1.Controls.Add(creditValue);
-                    form1.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(creditLabel);
+                    myDiv.Controls.Add(new LiteralControl("&nbsp"));
+                    myDiv.Controls.Add(creditValue);
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
 
-                    form1.Controls.Add(new LiteralControl("<br />"));
-                    form1.Controls.Add(priceLabel);
-                    form1.Controls.Add(new LiteralControl("&nbsp"));
-                    form1.Controls.Add(priceValue);
-                    form1.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(priceLabel);
+                    myDiv.Controls.Add(new LiteralControl("&nbsp"));
+                    myDiv.Controls.Add(priceValue);
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
 
-                    form1.Controls.Add(new LiteralControl("<br />"));
-                    form1.Controls.Add(enroll);
-                    form1.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
+                    myDiv.Controls.Add(enroll);
+                    myDiv.Controls.Add(new LiteralControl("<br />"));
+                    PlaceHolder1.Controls.Add(myDiv);
                     reader2.Close();
 
                 }

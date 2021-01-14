@@ -15,24 +15,13 @@ namespace GUCera
         protected void Page_Load(object sender, EventArgs e)
         {
            
-            if((int)Session["number"]==1)
-            {
-                error.Visible = true;
-                error.Text = "Number is added Successfully";
-                Session["number"] = 0;
-            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String number = numberText.Text;
-            if (number.Length == 0)
-            {
-                error.Visible = true;
-                error.Text = "Please enter the number ";
-            }
-            else
-            {
+            String number = Request.Form["numberText"];
+           
+            
                 String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
                 SqlConnection conn = new SqlConnection(connStr);
                 SqlCommand addMobileProc = new SqlCommand("addMobile", conn);
@@ -42,10 +31,10 @@ namespace GUCera
 
                 conn.Open();
                 addMobileProc.ExecuteNonQuery();
+                error.Visible = true;
+                error.Text = "Number is added Successfully";
                 conn.Close();
-                Session["number"] = 1;
-                Response.Redirect("TelephoneNumbers.aspx");
-            }
+            
         }
     }
 }

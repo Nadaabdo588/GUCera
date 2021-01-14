@@ -23,10 +23,10 @@ namespace GUCera
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
             SqlConnection conn = new SqlConnection(connStr);
 
-            int id = Int32.Parse(usernameText.Text);
-            String pass = passwordText.Text;
+            int id = Int32.Parse(Request.Form["usernameText"]);
+            String pass = Request.Form["passwordText"];
 
-
+            Console.Write(pass);
             SqlCommand userLoginProc = new SqlCommand("userLogin", conn);
             userLoginProc.CommandType = CommandType.StoredProcedure;
             userLoginProc.Parameters.Add(new SqlParameter("@id", id));
@@ -62,7 +62,7 @@ namespace GUCera
                 }
 
             }
-            else
+           else
             {
                 error.Visible = true;
                 error.Text = "Login failed";
