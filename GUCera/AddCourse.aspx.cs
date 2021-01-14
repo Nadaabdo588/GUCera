@@ -32,27 +32,34 @@ namespace GUCera
 
         protected void submitC_Click(object sender, EventArgs e)
         {
+            try
+            {
+                int id = (int)Session["user"];
+                String name = nameText.Text;
 
-            int id = (int)Session["user"];
-            String name = nameText.Text;
-           
-            int hours = Int32.Parse(hoursText.Text);
-            double price = double.Parse(PriceText.Text);
-            String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
+                int hours = Int32.Parse(hoursText.Text);
+                double price = double.Parse(PriceText.Text);
+                String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
 
-            SqlConnection conn = new SqlConnection(connStr);
+                SqlConnection conn = new SqlConnection(connStr);
 
-            SqlCommand addCourse = new SqlCommand("InstAddCourse", conn);
-            addCourse.CommandType = CommandType.StoredProcedure;
-            addCourse.Parameters.Add(new SqlParameter("@creditHours", hours));
-            addCourse.Parameters.Add(new SqlParameter("@name", name));
-            addCourse.Parameters.Add(new SqlParameter("@price", price));
-            addCourse.Parameters.Add(new SqlParameter("@instructorId", id));
-            conn.Open();
-            addCourse.ExecuteNonQuery();
-            conn.Close();
-            Session["course"] = 1;
-            Response.Redirect("AddCourse.aspx");
+                SqlCommand addCourse = new SqlCommand("InstAddCourse", conn);
+                addCourse.CommandType = CommandType.StoredProcedure;
+                addCourse.Parameters.Add(new SqlParameter("@creditHours", hours));
+                addCourse.Parameters.Add(new SqlParameter("@name", name));
+                addCourse.Parameters.Add(new SqlParameter("@price", price));
+                addCourse.Parameters.Add(new SqlParameter("@instructorId", id));
+                conn.Open();
+                addCourse.ExecuteNonQuery();
+                conn.Close();
+                Session["course"] = 1;
+                Response.Redirect("AddCourse.aspx");
+            }
+            catch(Exception er)
+            {
+                error.Visible = true;
+                error.Text = "an error has occured";
+            }
 
         }
     }
