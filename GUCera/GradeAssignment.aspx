@@ -25,8 +25,21 @@
               color: #8B5E31; 
               font-weight: 700;
         }
-        .Curved        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;        }
-        .Curved1        {    	    -webkit-border-radius: 50px;            -moz-border-radius: 50px;            border-radius: 30px;            color: #8B5E31;             font-weight: 700;             background-color: #71A2A6;        }
+        .Curved
+        {
+    	    -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 30px;
+        }
+        .Curved1
+        {
+    	    -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 30px;
+            color: #8B5E31; 
+            font-weight: 700; 
+            background-color: #71A2A6;
+        }
     </style>
 </head>
 <body style="background-color:#F4E8E8">       
@@ -55,7 +68,7 @@
         <br />
         <br />
         <br />
-        <asp:Button ID="submitC" CssClass="Curved1" runat="server" Text="Sumit" OnClick="submitC_Click" />
+        <asp:Button ID="submitC" CssClass="Curved1" runat="server" Text="Submit" OnClick="submitC_Click" />
         <br />
         <asp:Label ID="error" CssClass="Label1" runat="server" Visible="false"></asp:Label>
 

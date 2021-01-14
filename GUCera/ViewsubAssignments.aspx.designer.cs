@@ -7,10 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
 namespace GUCera
 {
-    public partial class viewAssignments
+
+
+    public partial class ViewAssignments
     {
 
         /// <summary>

@@ -10,7 +10,7 @@
 
 namespace GUCera
 {
-    public partial class viewAssignments
+    public partial class ListCertificates
     {
 
         /// <summary>
