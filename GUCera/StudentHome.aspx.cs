@@ -44,11 +44,6 @@ namespace GUCera
             Response.Redirect("MyCourses.aspx");
         }
 
-        protected void myAssignments_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("MyAssignments.aspx");
-        }
-
         protected void addFeedback_Click(object sender, ImageClickEventArgs e)
         {
             Session["feedback"] = 0;

@@ -52,12 +52,6 @@
 
             </div>
             <div class="col" >
-                <asp:ImageButton ID="ImageButton7" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/task.png" OnClick="myAssignments_Click"/>
-                <br />
-                <asp:Label ID="Label7" runat="server" cssclass="Label1" Text="My Assignments"></asp:Label>
-
-            </div>
-            <div class="col" >
                 <asp:ImageButton ID="ImageButton8" runat="server" imageurl="https://img.icons8.com/bubbles/100/000000/comments.png" OnClick="addFeedback_Click"/>
                 <br />
                 <asp:Label ID="Label8" runat="server" cssclass="Label1" Text="Add Feedback"></asp:Label>

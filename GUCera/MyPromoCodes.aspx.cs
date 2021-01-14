@@ -38,7 +38,7 @@ namespace GUCera
 
                 Label issueDate = new Label();
                 issueDate.CssClass = "Label2";
-                DateTime dt2 = reader.GetDateTime(reader.GetOrdinal("expiryDate"));
+                DateTime dt2 = reader.GetDateTime(reader.GetOrdinal("issueDate"));
                 String x2 = dt2.ToString();
                 issueDate.Text = x2;
 
