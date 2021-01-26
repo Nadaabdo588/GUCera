@@ -4,70 +4,88 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-</head>
-<body style="height: 328px">
-    <form id="form1" runat="server">
-        <div>
-            Admin Home</div>
-        <asp:Button ID="viewC" runat="server" Text="View Courses" Width="300px" OnClick="viewC_Click" />
-        <p>
-            <asp:Button ID="notacceptedC" runat="server" Text="View not Accepted Courses" OnClick="notacceptedC_Click" />
-        </p>
-        <p>
-            Add telephone number:-</p>
-        <p>
-            <asp:TextBox ID="mob" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:LinkButton ID="LinkButton4" runat="server" OnClick="addNo_Click">Add</asp:LinkButton>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="sucadd" runat="server" Text="You successfully added a telephone number!"></asp:Label>
-        </p>
-        <p>
-            Accept Course :-</p>
-        <p>
-            &nbsp;
-            <asp:Label ID="courseidLabel" runat="server" Text="Course ID"></asp:Label>
-            <asp:TextBox ID="courseId" runat="server" style="margin-left: 57px" Width="140px"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;
-            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="acceptC">   Accept course</asp:LinkButton>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="sucacc" runat="server" Text="You accepted the course!"></asp:Label>
-        </p>
-        <p>
-            Create Promo Code :-</p>
-        <p>
-            Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="pcode" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expiry Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="expirydate" runat="server"></asp:TextBox>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="discount" runat="server"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;
-            <asp:LinkButton ID="LinkButton2" runat="server" OnClick="createP">Create</asp:LinkButton>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="succer" runat="server" Text="Promo code is created successfully!"></asp:Label>
-        </p>
-        <p>
-            Issue Promo Code to a Student :-</p>
-        <p>
-            Student ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="sid" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Promo Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="pid" runat="server"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;
-            <asp:LinkButton ID="LinkButton3" runat="server" OnClick="issue">Issue</asp:LinkButton>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="suciss" runat="server" Text="Done!"></asp:Label>
-        </p>
-        <p>
-            <asp:Label ID="errmsg" runat="server" Text="This field can not be empty"></asp:Label>
-        </p>
-        <p>
-            &nbsp;</p>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles\Style.css" />
+    <title></title>
+
+</head>
+
+
+<body style="text-align:center">
+    <form id="form1" runat="server">
+        <div class="row">
+            <div class="col" style="text-align: left; background-color: white">
+                <img src="nav.png" width="555" height="416" />
+            </div>
+            <div class="col" style="text-align: center; background-color: white; position: center">
+                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">WELCOME TO GUCERA ! </p>
+                <p style="color: #3C4380">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
+            </div>
+        </div>
+        <div class="row" style="margin: 25px 25px 25px 25px">
+
+            <div class="col">
+
+                <div class="card">
+                    <h5 class="card-header Label3">All courses</h5>
+                    <!--    -->
+                    <div class="card-body">
+                        <img src="https://www.kindpng.com/picc/m/66-666349_logohomebanner-online-course-isometric-illustrations-free-hd-png.png" alt="" width="200" height="200">
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <asp:Button class="Curved1" ID="viewC" runat="server" Text="View Courses" Width="" OnClick="viewC_Click" />
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card">
+                    <h5 class="card-header Label3">Not Accepted Courses</h5>
+                    <div class="card-body">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-library-2601429-2182483.png" alt="" width="200" height="200">
+
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <asp:Button class="Curved1" ID="notacceptedC" runat="server" Text="View not Accepted Courses" OnClick="notacceptedC_Click" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="card">
+                    <h5 class="card-header Label3">Manage </h5>
+
+                    <div class="card-body">
+                        <img src="https://cdn2.iconfinder.com/data/icons/testing-software-2-filled-outline/128/Testing_Software_2_-_Ps_Style_-_1-11-512.png" alt="" width="200" height="200">
+
+                        <p class="card-text"></p>
+                    </div>
+
+                    <div class="card-footer">
+                        <asp:Button class="Curved1" ID="MngOpt" runat="server" Text="Manage Options" OnClick="MngOpt_Click" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
 
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
-

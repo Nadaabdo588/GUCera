@@ -22,8 +22,12 @@ namespace GUCera
             SqlCommand adminViewC = new SqlCommand("AdminViewAllCourses", conn);
             adminViewC.CommandType = CommandType.StoredProcedure;
             conn.Open();
+            String s1 = "<div class='card text-center'><div class='card-header'>All Courses</div><div class='card-body' >";
+            String s2 = "</div></div>";
             SqlDataReader rdr = adminViewC.ExecuteReader(CommandBehavior.CloseConnection);
-            sb.Append("<table border = '1'> ");
+            sb.Append(s1);
+            sb.Append("<table class = 'table table-dark'>  ");
+            sb.Append("<caption>All Courses</caption>");
             sb.Append("<tr> <th> Course Name</th> <th> Credit Hours</th> <th> Price </th> <th> Content</th> <th> Accepted</th> </tr>");
             while(rdr.Read())
             {
@@ -45,11 +49,12 @@ namespace GUCera
                 if (bit)
                     a = "True";
          
-                String htmlLine = "<tr>" + "<th> " + cN + "</th>" + "<th> " + cH + "</th>" + "<th> " + p + "</th>" + "<th> " + c + "</th>" + "<th> " + a + "</th>"+"</tr>";
+                String htmlLine = "<tr class='table - active'>" + "<th> " + cN + "</th>" + "<th> " + cH + "</th>" + "<th> " + p + "</th>" + "<th> " + c + "</th>" + "<th> " + a + "</th>"+"</tr>";
                 sb.Append(htmlLine);
             }
+            sb.Append(s2);
             form1.Controls.Add(new Literal { Text = sb.ToString()});
-
+       
         }
     }
 }

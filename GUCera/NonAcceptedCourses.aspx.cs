@@ -18,12 +18,14 @@ namespace GUCera
         {
             String connStr = WebConfigurationManager.ConnectionStrings["GUCera"].ToString();
             SqlConnection conn = new SqlConnection(connStr);
-
+             String s1 = "<div class='card text-center'><div class='card-header'>Not Accepted Courses</div><div class='card-body' >";
+            String s2 = "</div></div>";
             SqlCommand adminViewNonC = new SqlCommand("AdminViewNonAcceptedCourses", conn);
             adminViewNonC.CommandType = CommandType.StoredProcedure;
             conn.Open();
             SqlDataReader rdr = adminViewNonC.ExecuteReader(CommandBehavior.CloseConnection);
-            sb.Append("<table border = '1'> ");
+            sb.Append(s1);
+            sb.Append("<table class = 'table table-dark'> ");
             sb.Append("<tr> <th> Course Name</th> <th> Credit Hours</th> <th> Price </th> <th> Content</th> </tr>");
             while (rdr.Read())
             {
@@ -38,9 +40,10 @@ namespace GUCera
                
                     c = rdr.GetString(rdr.GetOrdinal("content"));
                 
-                String htmlLine = "<tr>" + "<th> " + cN + "</th>" + "<th> " + cH + "</th>" + "<th> " + p + "</th>" + "<th> " + c + "</th>" + "</tr>";
+                String htmlLine = "<tr class='table - active'>" + "<th> " + cN + "</th>" + "<th> " + cH + "</th>" + "<th> " + p + "</th>" + "<th> " + c + "</th>" + "</tr>";
                 sb.Append(htmlLine);
             }
+            sb.Append(s2);
             form1.Controls.Add(new Literal { Text = sb.ToString() });
 
         }

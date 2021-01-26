@@ -6,11 +6,11 @@
 }
 
 .Label1 {
-    color: #483D8B;
+    color: #3C4380;
     font-family: "Roboto", sans-serif;
 }
 .Label2 {
-    color: #71A2A6;
+    color: #3C4380;
     font-weight: 700;
 }
 
@@ -26,7 +26,7 @@
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #483D8B;
+    background: #3C4380;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
@@ -71,7 +71,7 @@
 .form input {
         font-family: "Roboto", sans-serif;
         outline: 0;
-        background: #E6E6FA;
+        background: #CEE4FD;
         width: 100%;
         border: 0;
         margin: 0 0 15px;
@@ -79,11 +79,11 @@
         box-sizing: border-box;
         font-size: 14px;
 }
- .form .button {
+    .form .button {
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         outline: 0;
-        background: #483D8B;
+        background: #3C4380;
         width: 100%;
         border: 0;
         padding: 15px;
@@ -92,11 +92,11 @@
         -webkit-transition: all 0.3 ease;
         transition: all 0.3 ease;
         cursor: pointer;
- }
+    }
 
-.form button:hover, .form button:active, .form button:focus {
-            background: #E6E6FA;
-}
+    .form button:hover, .form button:active, .form button:focus {
+        background: #CEE4FD;
+    }
 
 .form .message {
         margin: 15px 0 0;
@@ -104,30 +104,30 @@
         font-size: 12px;
 }
 
-.form .message .a {
-        color: #483D8B;
+    .form .message .a {
+        color: #3C4380;
         text-decoration: none;
-}
+    }
 
 
 .Label3 {
-    color: #483D8B;
+    color: #3C4380;
     font-weight: 700;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
 }
 .Label4 {
-    color: #483D8B;
+    color: #3C4380;
     font-family: "Roboto", sans-serif;
 }
 
 
 body {
-    background: #483D8B; /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #483D8B, #E6E6FA);
-    background: -moz-linear-gradient(right, #483D8B, #E6E6FA);
-    background: -o-linear-gradient(right, #483D8B, #E6E6FA);
-    background: linear-gradient(to left, #483D8B, #E6E6FA);
+    background: #808BAC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right,#808BAC, #808BAC);
+    background: -moz-linear-gradient(right, #808BAC, #808BAC);
+    background: -o-linear-gradient(right, #808BAC, #808BAC);
+    background: linear-gradient(to left, #808BAC, #808BAC);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -135,5 +135,23 @@ body {
 
 
 .Curved1:hover, .Curved1.button1:active, .Curved1.button1:focus {
-    background: #E6E6FA;
+    background: #CEE4FD;
+}
+
+.omarinput {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #CEE4FD;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.omarmessage {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
 }

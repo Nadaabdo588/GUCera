@@ -11,7 +11,7 @@ namespace GUCera
 {
 
 
-    public partial class AdminHome
+    public partial class Telephone2
     {
 
         /// <summary>
@@ -24,30 +24,21 @@ namespace GUCera
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// viewC control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewC;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// notacceptedC control.
+        /// error control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button notacceptedC;
-
-        /// <summary>
-        /// MngOpt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button MngOpt;
+        protected global::System.Web.UI.WebControls.Label error;
     }
 }

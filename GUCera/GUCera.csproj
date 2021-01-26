@@ -73,6 +73,7 @@
     <Content Include="AddCourse.aspx" />
     <Content Include="AddFeedback.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="administrator-300px.png" />
     <Content Include="assignment.png" />
     <Content Include="certificate.png" />
     <Content Include="course.png" />
@@ -91,11 +92,12 @@
     <Content Include="LoadingPage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="logo.png" />
+    <Content Include="ManageOptions.aspx" />
     <Content Include="MyAssignments.aspx" />
     <Content Include="MyCourses.aspx" />
     <Content Include="MyCreditCards.aspx" />
     <Content Include="MyPromoCodes.aspx" />
-    <Content Include="nav.jpg" />
+    <Content Include="nav.png" />
     <Content Include="NonAcceptedCourses.aspx" />
     <Content Include="number.png" />
     <Content Include="profile.png" />
@@ -103,6 +105,7 @@
     <Content Include="Studentprofile.aspx" />
     <Content Include="lgog.png" />
     <Content Include="styles\style.css" />
+    <Content Include="Telephone2.aspx" />
     <Content Include="TelephoneNumbers.aspx" />
     <Content Include="ViewAssignments.aspx" />
     <Content Include="ViewFeedbacks.aspx" />
@@ -202,6 +205,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageOptions.aspx.cs">
+      <DependentUpon>ManageOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageOptions.aspx.designer.cs">
+      <DependentUpon>ManageOptions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MyAssignments.aspx.cs">
       <DependentUpon>MyAssignments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -251,6 +261,13 @@
     </Compile>
     <Compile Include="Studentprofile.aspx.designer.cs">
       <DependentUpon>Studentprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Telephone2.aspx.cs">
+      <DependentUpon>Telephone2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Telephone2.aspx.designer.cs">
+      <DependentUpon>Telephone2.aspx</DependentUpon>
     </Compile>
     <Compile Include="TelephoneNumbers.aspx.cs">
       <DependentUpon>TelephoneNumbers.aspx</DependentUpon>

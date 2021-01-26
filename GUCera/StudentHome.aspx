@@ -7,50 +7,49 @@
     <link rel="stylesheet" href="styles\style.css" type="text/css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <title></title>
 
-    
+
 
 </head>
-<body style="text-align:center;">
+<body style="text-align: center;">
 
-    <form id="form1" runat="server" >
+    <form id="form1" runat="server">
         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
             <li class="nav-item">
-                <p class="nav-link" style="color: #483D8B;"><b>GUCera</b></p>
+                <p class="nav-link" style="color: #3C4380;"><b>GUCera</b></p>
             </li>
             <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link active Label4"  aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
+                <asp:LinkButton CssClass="nav-link active Label4" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
             </li>
             <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page"  runat="server" Text="Profile" OnClick="p_Click" />
+                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Profile" OnClick="p_Click" />
             </li>
             <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page"  runat="server" Text="Courses" OnClick="c_Click" />
+                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Courses" OnClick="c_Click" />
             </li>
             <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page"  runat="server" Text="Promocodes" OnClick="pc_Click" />
+                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Promocodes" OnClick="pc_Click" />
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Certificates" OnClick="cer_Click" />
             </li>
         </ul>
         <div class="row">
-            <div class="col" style="text-align:left; background-color: white">
-                <img src="nav.jpg" width="626" height="416" />
-
+            <div class="col" style="text-align: left; background-color: white">
+                <img src="nav.png" width="555" height="416" />
             </div>
-            <div class="col" style="text-align:center; background-color: white ;position:center">
-               <p style="font-size:75px;font-weight:700;font-family: 'Arvo', serif;color:#483D8B"> WELCOME TO GUCERA ! </p>
-               <p style="color:#483D8B">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
+            <div class="col" style="text-align: center; background-color: white; position: center">
+                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">WELCOME TO GUCERA ! </p>
+                <p style="color: #3C4380">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
             </div>
         </div>
         <br />
         <br />
-        <div class="row h6" style="margin:25px 25px 25px 25px">
+        <div class="row h6" style="margin: 25px 25px 25px 25px">
             <div class="col">
                 <div class="card h-100">
                     <div class="card-header">
@@ -102,7 +101,7 @@
             </div>
         </div>
         <br />
-        <div class="row" style="margin:25px 25px 25px 25px">
+        <div class="row" style="margin: 25px 25px 25px 25px">
             <div class="col w-75">
                 <div class="row w-100">
                     <div class="card w-100 h6">
@@ -117,23 +116,23 @@
                                 <div class="col">
                                     <p class="card-text Label4">You can review your progress in your enrolled-in courses, submit your assignments and add feedbacks to any of these courses.</p>
                                 </div>
-                              
+
                                 <div class="col-3">
                                     <img class="card-img" src="inProgress.png" />
                                 </div>
 
                             </div>
 
-                        </div> 
+                        </div>
                         <div class="card-footer">
-                                    <asp:Button CssClass="Curved1" ID="ImageButton6" runat="server" OnClick="myCources_Click" Text="View my courses" />
-                                </div>
+                            <asp:Button CssClass="Curved1" ID="ImageButton6" runat="server" OnClick="myCources_Click" Text="View my courses" />
+                        </div>
                     </div>
                 </div>
                 <br />
                 <div class="row w-100">
                     <div class="col">
-                        <div class="card">
+                        <div class="card h-100">
                             <div class="card-header">
                                 <h2 class="Label3">Promocodes</h2>
                             </div>
@@ -148,11 +147,11 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card">
+                        <div class="card h-100">
                             <div class="card-header">
                                 <h2 class="Label3">Certificates</h2>
                             </div>
-                            <div class="card-body" >
+                            <div class="card-body">
                                 <img src="https://img.icons8.com/clouds/100/000000/certificate.png" />
                                 <p class="card-text Label4">View all the certificates for all the courses you have completed</p>
                             </div>
@@ -181,7 +180,7 @@
 
             </div>
         </div>
-      
+
 
 
     </form>

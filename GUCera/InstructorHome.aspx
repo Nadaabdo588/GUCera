@@ -30,13 +30,12 @@
             </li>
         </ul>
          <div class="row">
-            <div class="col" style="text-align:left; background-color: white">
-                <img src="nav.jpg" width="626" height="416" />
-
+            <div class="col" style="text-align: left; background-color: white">
+                <img src="nav.png" width="555" height="416" />
             </div>
-            <div class="col" style="text-align:center; background-color: white ;position:center">
-               <p style="font-size:75px;font-weight:700;font-family: 'Arvo', serif;color:#483D8B"> WELCOME TO GUCERA ! </p>
-               <p style="color:#483D8B">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
+            <div class="col" style="text-align: center; background-color: white; position: center">
+                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">WELCOME TO GUCERA ! </p>
+                <p style="color: #3C4380">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
             </div>
         </div>
         <div class="row" style="margin: 25px 25px 25px 25px">

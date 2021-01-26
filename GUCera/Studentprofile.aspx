@@ -17,7 +17,7 @@
 
         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
             <li class="nav-item">
-                <p class="nav-link" style="color: #483D8B;"><b>GUCera</b></p>
+                <p class="nav-link" style="color: #3C4380;"><b>GUCera</b></p>
             </li>
             <li class="nav-item">
                 <asp:LinkButton CssClass="nav-link " Style="color: #483D8B;" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />

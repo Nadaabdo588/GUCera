@@ -37,7 +37,7 @@ namespace GUCera
         protected void telephone_Click(object sender, EventArgs e)
         {
             Session["number"] = 0;
-            Response.Redirect("TelephoneNumbers.aspx");
+            Response.Redirect("Telephone2.aspx");
         }
         protected void myCources_Click(object sender, EventArgs e)
         {

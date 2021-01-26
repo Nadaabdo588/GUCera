@@ -58,7 +58,7 @@
 
             </div>
             <div class="col">
-                <img src="creditcard.png" />
+                <img src="creditcard.png"  width="600" height="600"/>
             </div>
         </div>
     </form>
