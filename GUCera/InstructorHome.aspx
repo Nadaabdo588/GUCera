@@ -34,7 +34,7 @@
                 <img src="nav.png" width="555" height="416" />
             </div>
             <div class="col" style="text-align: center; background-color: white; position: center">
-                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">WELCOME TO GUCERA ! </p>
+                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">Welcome to GUCera! </p>
                 <p style="color: #3C4380">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
             </div>
         </div>

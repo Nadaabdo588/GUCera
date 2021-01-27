@@ -12,7 +12,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server" class="d-flex justify-content-center">
+    <form id="form1" runat="server" class="d-flex justify-content-center" >
         <div >
 
         </div>

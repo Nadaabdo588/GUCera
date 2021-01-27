@@ -11,8 +11,8 @@
      <link rel="stylesheet" href="Styles\Style.css" />
     <title></title>
 </head>
-<body>
-    <form id="form1" runat="server" class="d-flex justify-content-center">
+<body >
+    <form id="form1" runat="server" class="d-flex justify-content-center" >
         <div>
         </div>
     </form>

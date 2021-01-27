@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles\style.css" type="text/css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <title></title>
 
@@ -38,12 +36,12 @@
                 <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Certificates" OnClick="cer_Click" />
             </li>
         </ul>
-        <div class="row">
+        <div class="row" >
             <div class="col" style="text-align: left; background-color: white">
                 <img src="nav.png" width="555" height="416" />
             </div>
             <div class="col" style="text-align: center; background-color: white; position: center">
-                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">WELCOME TO GUCERA ! </p>
+                <p style="font-size: 75px; font-weight: 700; font-family: 'Arvo', serif; color: #3C4380">Welcome to GUCera! </p>
                 <p style="color: #3C4380">GUCera is a perfect website for best educational services for all students. You all have the chance to experience new courses and learning techniques. </p>
             </div>
         </div>
