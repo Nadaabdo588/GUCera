@@ -11,7 +11,7 @@
     <title></title>
 </head>
 
-<body style="background-color: #F4E8E8">
+<body style="text-align: center;">
 
     <form id="form1" runat="server">
         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">

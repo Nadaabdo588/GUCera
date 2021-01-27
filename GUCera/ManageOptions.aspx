@@ -20,16 +20,16 @@
                 <a class="nav-link Label3 ">GUCera</a>
             </li>
              <li class="nav-item " role="presentation">
-                <asp:LinkButton Cssclass="nav-link Label3" role="tab" ID="h" aria-current="page" runat="server" text="home" aria-selected="true" OnClick="h_click" />
+                <asp:LinkButton Cssclass="nav-link Label4" role="tab" ID="h" aria-current="page" runat="server" text="home" aria-selected="true" OnClick="h_click" />
             </li>
             <li class="nav-item " role="presentation">
-                <a class="nav-link active Label3" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Profile</a>
+                <a class="nav-link active Label4" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Profile</a>
             </li>
             <li class="nav-item " role="presentation">
-                <a class="nav-link Label3 " id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Accept Course</a>
+                <a class="nav-link Label4 " id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Accept Course</a>
             </li>
             <li class="nav-item-" role="presentation">
-                <a class="nav-link Label3" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Promo Codes</a>
+                <a class="nav-link Label4" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Promo Codes</a>
             </li>
         </ul>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
