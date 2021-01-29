@@ -29,37 +29,40 @@
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: 8% 8% 8% 8%;">
-            <div class="form col">
-                <h2 class="Label3">Assignment details</h2>
-                <br />
-                <br />
-
-                <input id="courseText" name="courseText" runat="server" placeholder="Course Number" required />
-
-
-                <input id="typeText" name="typeText" runat="server" placeholder="Assignment Type" required />
-
-                <input id="numberText" name="numberText" runat="server" placeholder="Assignment Number" required />
-
-
-                <input id="gradeText" name="gradeText" runat="server" placeholder="Full Grade" required />
-
-
-
-                <input id="weightText" name="weightText" runat="server" placeholder="Weight" required />
-
-
-                <input id="deadlineText" name="deadlineText" runat="server" placeholder="Deadline" required />
-
-                <input id="contentText" name="contentText" runat="server" placeholder="Content" required />
-
-                <asp:Button ID="submitC" CssClass="button" runat="server" Text="Add Assignment" OnClick="submitC_Click" />
-
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
-
-            </div>
             <div class="col">
-                <img src="assignment.png" width="600" height="450"/>
+
+                <div class="form ">
+                    <h2 class="Label3">Assignment details</h2>
+                    <br />
+                    <br />
+
+                    <input id="courseText" name="courseText" runat="server" placeholder="Course Number" required />
+
+
+                    <input id="typeText" name="typeText" runat="server" placeholder="Assignment Type" required />
+
+                    <input id="numberText" name="numberText" runat="server" placeholder="Assignment Number" required />
+
+
+                    <input id="gradeText" name="gradeText" runat="server" placeholder="Full Grade" required />
+
+
+
+                    <input id="weightText" name="weightText" runat="server" placeholder="Weight" required />
+
+
+                    <input id="deadlineText" name="deadlineText" runat="server" placeholder="Deadline" required />
+
+                    <input id="contentText" name="contentText" runat="server" placeholder="Content" required />
+
+                    <asp:Button ID="submitC" CssClass="button" runat="server" Text="Add Assignment" OnClick="submitC_Click" />
+
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+
+                </div>
+            </div>
+            <div class="col" style="text-align:center">
+                <img src="assignment.png" width="600" style="position:center;" />
             </div>
         </div>
     </form>

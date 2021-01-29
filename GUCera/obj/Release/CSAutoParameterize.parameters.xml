@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="GUCera-Web.config Connection String" description="GUCera Connection String used in web.config by the application to access the database." defaultValue="Server=(localdb)\MSSQLLocalDB; Initial Catalog=GUCera;&#xD;&#xA;     MultipleActiveResultSets=true; Integrated Security=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\bebawy\\Source\\Repos\\Nadaabdo588\\GUCera\\GUCera\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GUCera']/@connectionString" />
+  </parameter>
+  <parameter name="GUCeraConnectionString-Web.config Connection String" description="GUCeraConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=GUCera;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\bebawy\\Source\\Repos\\Nadaabdo588\\GUCera\\GUCera\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GUCeraConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

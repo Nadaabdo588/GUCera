@@ -28,22 +28,26 @@
             <li class="nav-item">
                 <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Promocodes" OnClick="pc_Click" />
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <asp:LinkButton CssClass="nav-link active Label4" aria-current="page" runat="server" Text="Certificates" OnClick="cer_Click" />
             </li>
         </ul>
-        <div class="layout row" style="padding: 8% 8% 8%; margin:auto ;">
-            <div class="form col">
-                <h1 class="Label4">Choose an instructor to enroll with</h1>
-                <br />
-                <br />
-                <asp:DropDownList ID="dl" runat="server"></asp:DropDownList>
-                <br />
-                <br />
-                <asp:Button ID="enrollButton" runat="server" Text="Enroll" CssClass="button" OnClick="enrollButton_Click" />
-                <br />
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+        <div class="layout row" style="padding: 8% 8% 8%; margin: auto;">
+            <div class="col">
+
+                <div class="form ">
+                    <h1 class="Label4">Choose an instructor to enroll with</h1>
+                    <br />
+                    <br />
+                    <asp:DropDownList ID="dl" runat="server"></asp:DropDownList>
+                    <br />
+                    <br />
+                    <asp:Button ID="enrollButton" runat="server" Text="Enroll" CssClass="button" OnClick="enrollButton_Click" />
+                    <br />
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+                </div>
             </div>
+            \
             <div class="col">
                 <img src="instructor.png" />
 

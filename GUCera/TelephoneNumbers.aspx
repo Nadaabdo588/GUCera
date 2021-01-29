@@ -36,8 +36,8 @@
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: auto;">
-
-            <div class="form col">
+            <div class="col">
+            <div class="form" >
 
                 <h1 class="Label3">Add Telephone number</h1>
                 <br />
@@ -48,9 +48,9 @@
                 <asp:Button CssClass="button" ID="Button1" runat="server" Text="Add number" OnClick="Button1_Click" />
            
                 <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
-            </div>
+            </div></div>
             <div class="col">
-                <img src="number.png"  width="600" height="600"/>
+                <img src="number.png"  width="400" height="350"/>
             </div>
         </div>
 
