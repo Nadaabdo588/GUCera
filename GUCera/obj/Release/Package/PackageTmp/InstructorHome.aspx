@@ -147,7 +147,7 @@
                 <div class="row h-50 w-75" style="margin: 25px 25px 25px 25px">
                     <div class="card ">
                         <div class="card-header">
-                            <h2 class="Label3">View feedbscks</h2>
+                            <h2 class="Label3">View feedbacks</h2>
                         </div>
                         <div class="card-body">
                             <img src="https://img.icons8.com/clouds/100/000000/task.png" />
