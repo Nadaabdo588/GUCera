@@ -14,7 +14,7 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -36,39 +36,42 @@ namespace GUCera
                 error.Visible = true;
                 error.Text = "Number is added Successfully";
                 conn.Close();
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 error.Visible = true;
                 error.Text = "Invalid data entered by the user";
             }
         }
+
+
+
         protected void h_Click(object sender, EventArgs e)
         {
-            Response.Redirect("StudentHome.aspx");
+
+
+            Response.Redirect("InstructorHome.aspx");
 
         }
 
 
-        protected void p_Click(object sender, EventArgs e)
+
+        protected void as_Click(object sender, EventArgs e)
         {
-            Response.Redirect("StudentProfile.aspx");
+            Session["request"] = 1;
+
+            Response.Redirect("ChooseCourse.aspx?req=1");
+
 
         }
 
-        protected void c_Click(object sender, EventArgs e)
+        protected void fd_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MyCourses.aspx");
 
-        }
+            Session["request"] = 0;
+            Response.Redirect("ChooseCourse.aspx?req=0");
 
-        protected void pc_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MyPromoCodes.aspx");
 
-        }
-        protected void cer_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ListCertificates.aspx");
         }
     }
 }

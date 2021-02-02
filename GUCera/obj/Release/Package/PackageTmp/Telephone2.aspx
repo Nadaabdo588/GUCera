@@ -34,21 +34,23 @@
         </ul>
 
         <div class="layout row" style="padding: 8% 8% 8%; margin: auto;">
+            <div class="col">
 
-            <div class="form col">
+                <div class="form">
 
-                <h1 class="Label3">Add Telephone number</h1>
-                <br />
-                <br />
-                <br />
-                <input type="text" id="numberText" name="numberText" placeholder="Number" required />
+                    <h1 class="Label3">Add Telephone number</h1>
+                    <br />
+                    <br />
+                    <br />
+                    <input type="text" id="numberText" name="numberText" placeholder="Number" required />
 
-                <asp:Button CssClass="button" ID="Button1" runat="server" Text="Add number" OnClick="Button1_Click" />
+                    <asp:Button CssClass="button" ID="Button1" runat="server" Text="Add number" OnClick="Button1_Click" />
 
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+                </div>
             </div>
             <div class="col">
-                <img src="number.png" width="912" height="850" />
+                <img src="number.png" width="400" height="350" />
             </div>
         </div>
 

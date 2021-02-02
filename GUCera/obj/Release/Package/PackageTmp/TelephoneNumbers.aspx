@@ -15,29 +15,24 @@
 
     <form id="form1" runat="server">
 
-        <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
+         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
             <li class="nav-item">
-                <p class="nav-link" style="color: #483D8B;"><b>GUCera</b></p>
+                <p class="nav-link Label3"><b>GUCera</b></p>
             </li>
             <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
+                <asp:LinkButton ID="h" CssClass="nav-link active Label4" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
+            </li>
+
+            <li class="nav-item">
+                <asp:LinkButton ID="a" CssClass="nav-link Label4" aria-current="page" runat="server" Text="Assignments" OnClick="as_Click" />
             </li>
             <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Profile" OnClick="p_Click" />
-            </li>
-            <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Courses" OnClick="c_Click" />
-            </li>
-            <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Promocodes" OnClick="pc_Click" />
-            </li>
-            <li class="nav-item">
-                <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Certificates" OnClick="cer_Click" />
+                <asp:LinkButton ID="f" CssClass="nav-link Label4" aria-current="page" runat="server" Text="Feedbacks" OnClick="fd_Click" />
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: auto;">
-
-            <div class="form col">
+            <div class="col">
+            <div class="form" >
 
                 <h1 class="Label3">Add Telephone number</h1>
                 <br />
@@ -48,9 +43,9 @@
                 <asp:Button CssClass="button" ID="Button1" runat="server" Text="Add number" OnClick="Button1_Click" />
            
                 <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
-            </div>
+            </div></div>
             <div class="col">
-                <img src="number.png"  width="600" height="600"/>
+                <img src="number.png"  width="400" height="350"/>
             </div>
         </div>
 

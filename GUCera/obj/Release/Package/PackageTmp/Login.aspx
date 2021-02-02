@@ -11,11 +11,14 @@
     <title></title>
 
 </head>
-<body >
+<body>
     <div class="login-page">
 
         <div class="form">
             <form id="form2" runat="server" class="register-formI">
+                <h2 class="Label3">Instructor Registration</h2>
+                <br />
+
                 <input type="text" name="firstnameText" placeholder="First name" required />
                 <input type="text" name="lastnameText" placeholder="Last name" required />
                 <input type="password" name="passwordText" placeholder="Password" required />
@@ -35,10 +38,14 @@
                 </div>
                 <asp:Button ID="RegisterButton" runat="server" Text="Register" CssClass="button" OnClick="RegisterButtonI_Click" />
 
+                <asp:Label ID="Label2" CssClass="message" runat="server" Visible="false"></asp:Label>
 
                 <p class="message">Already registered?<asp:LinkButton Text="Sign in" CssClass="a" runat="server" OnClick="sigin_Click" /></p>
             </form>
             <form id="form3" runat="server" class="register-formS">
+                <h2 class="Label3">Student Registration</h2>
+                <br />
+
                 <input type="text" name="firstnameText" placeholder="First name" required />
                 <input type="text" name="lastnameText" placeholder="Last name" required />
                 <input type="password" name="passwordText" placeholder="Password" required />
@@ -57,19 +64,26 @@
                     </label>
                 </div>
                 <asp:Button ID="RegisterStudent" runat="server" Text="Register" CssClass="button" OnClick="RegisterButtonS_Click" />
+                <asp:Label ID="Label1" CssClass="message" runat="server" Visible="false"></asp:Label>
 
-                <p class="message">Already registered?
-                    <asp:LinkButton Text="Sign in" CssClass="a" runat="server" OnClick="sigin_Click" /></p>
+                <p class="message">
+                    Already registered?
+                    <asp:LinkButton Text="Sign in" CssClass="a" runat="server" OnClick="sigin_Click" />
+                </p>
             </form>
             <form id="form1" class="login-form" runat="server">
                 <p class="Label3">Welcome to GUCera ! </p>
                 <input type="text" name="usernameText" placeholder="User ID" />
                 <input type="password" name="passwordText" placeholder="Password" />
                 <asp:Button CssClass="button" OnClick="logIn_Click" runat="server" Text="Login" />
-                <p class="message">Not registered? Register as
+                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+
+                <p class="message">
+                    Not registered? Register as
                     <asp:LinkButton Text="Student" CssClass="a" runat="server" OnClick="MyFunction2_Click" />
                     or 
                     <asp:LinkButton Text="Instructor" CssClass="a" runat="server" OnClick="MyFunction_Click" />
+
                 </p>
             </form>
         </div>

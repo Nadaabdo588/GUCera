@@ -34,32 +34,35 @@
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: auto;">
-            <div class="form col">
-
-                <h1 class="Label3">Credit Card details</h1>
-                <br />
-                <br />
-                <br />
-
-                <input type="text" id="cnn" name="cnn" placeholder="Credit card number" required />
-            
-
-                <input type="text" id="hname" name="hname" placeholder="Card holder name" required />
-
-                <input type="text" id="date" name="date" placeholder="Expiry date" required />
-
-          
-                <input type="text" id="cvv" name="cvv" placeholder="CVV" required />
-
-           
-                <asp:Button ID="submitC" CssClass="button" runat="server" Text="Add credit card" OnClick="submitC_Click" />
-               
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
-
-            </div>
             <div class="col">
-                <img src="creditcard.png"  width="600" height="600"/>
+
+                <div class="form ">
+
+                    <h1 class="Label3">Credit Card details</h1>
+                    <br />
+                    <br />
+                    <br />
+
+                    <input type="text" id="cnn" name="cnn" placeholder="Credit card number" required />
+
+
+                    <input type="text" id="hname" name="hname" placeholder="Card holder name" required />
+
+                    <input type="text" id="date" name="date" placeholder="Expiry date" required />
+
+
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required />
+
+
+                    <asp:Button ID="submitC" CssClass="button" runat="server" Text="Add credit card" OnClick="submitC_Click" />
+
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+
+                </div>
             </div>
+        <div class="col">
+            <img src="creditcard.png" width="600" height="600" />
+        </div>
         </div>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

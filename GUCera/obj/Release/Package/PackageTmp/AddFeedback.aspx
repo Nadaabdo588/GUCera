@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
             <li class="nav-item">
-                <p class="nav-link" style="color: #483D8B;"><b>GUCera</b></p>
+                <p class="nav-link Label3"><b>GUCera</b></p>
             </li>
             <li class="nav-item">
                 <asp:LinkButton CssClass="nav-link Label4" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
@@ -34,23 +34,25 @@
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: auto;">
-            <div class="form col">
-                <h2 class="Label3" >Add Feedback</h2>
-                <br />
-                <br />
+            <div class="col">
 
-                <br />
+                <div class="form">
+                    <h2 class="Label3">Add Feedback</h2>
+                    <br />
+                    <br />
 
-                <input id="comment" name="comment" runat="server" placeholder="Comment" required />
+                    <br />
 
-                <asp:Button ID="submit" CssClass="button" runat="server" Text="Add Feedback" OnClick="submit_Click" />
-                <br />
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+                    <input id="comment" name="comment" runat="server" placeholder="Comment" required />
 
+                    <asp:Button ID="submit" CssClass="button" runat="server" Text="Add Feedback" OnClick="submit_Click" />
+                    <br />
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
 
+                </div>
             </div>
             <div class="col">
-                <img src="feedback.png" width="912" height="850" />
+                <img src="feedback.png" width="600" height="600" />
             </div>
         </div>
     </form>

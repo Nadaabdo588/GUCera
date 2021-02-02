@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\GUC</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="aboutus.png">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="AceeptedCourses.aspx">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="AddAssignment.aspx">
+      <publishTime>02/02/2021 01:48:48</publishTime>
+    </File>
+    <File Include="AddCourse.aspx">
+      <publishTime>02/02/2021 01:49:09</publishTime>
+    </File>
+    <File Include="AddFeedback.aspx">
+      <publishTime>02/02/2021 01:49:26</publishTime>
+    </File>
+    <File Include="AdminHome.aspx">
+      <publishTime>01/28/2021 20:36:08</publishTime>
+    </File>
+    <File Include="administrator-300px.png">
+      <publishTime>01/26/2021 21:00:46</publishTime>
+    </File>
+    <File Include="assignment.png">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="bin/GUCera.dll">
+      <publishTime>02/02/2021 01:52:52</publishTime>
+    </File>
+    <File Include="bin/GUCera.pdb">
+      <publishTime>02/02/2021 01:52:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="certificate.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="ChooseCourse.aspx">
+      <publishTime>02/02/2021 01:49:46</publishTime>
+    </File>
+    <File Include="course.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="courses.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="creditcard.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="EnrollPage.aspx">
+      <publishTime>01/29/2021 18:50:03</publishTime>
+    </File>
+    <File Include="explore.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="feedback.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="GradeAssignment.aspx">
+      <publishTime>02/02/2021 01:50:02</publishTime>
+    </File>
+    <File Include="inProgress.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="instructor.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="InstructorHome.aspx">
+      <publishTime>02/02/2021 01:47:15</publishTime>
+    </File>
+    <File Include="IssueCertificate.aspx">
+      <publishTime>01/29/2021 18:58:12</publishTime>
+    </File>
+    <File Include="lgog.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="ListCertificates.aspx">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="LoadingPage.aspx">
+      <publishTime>02/02/2021 00:33:08</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>02/02/2021 01:07:51</publishTime>
+    </File>
+    <File Include="logo.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="ManageOptions.aspx">
+      <publishTime>01/27/2021 22:21:01</publishTime>
+    </File>
+    <File Include="MyAssignments.aspx">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="MyCourses.aspx">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="MyCreditCards.aspx">
+      <publishTime>01/29/2021 18:48:27</publishTime>
+    </File>
+    <File Include="MyPromoCodes.aspx">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="nav.png">
+      <publishTime>01/27/2021 00:48:44</publishTime>
+    </File>
+    <File Include="NonAcceptedCourses.aspx">
+      <publishTime>01/28/2021 20:31:00</publishTime>
+    </File>
+    <File Include="number.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="profile.png">
+      <publishTime>01/25/2021 22:55:07</publishTime>
+    </File>
+    <File Include="StudentHome.aspx">
+      <publishTime>01/28/2021 20:35:17</publishTime>
+    </File>
+    <File Include="Studentprofile.aspx">
+      <publishTime>01/27/2021 01:15:09</publishTime>
+    </File>
+    <File Include="styles/style.css">
+      <publishTime>01/27/2021 02:56:13</publishTime>
+    </File>
+    <File Include="Telephone2.aspx">
+      <publishTime>01/29/2021 18:56:31</publishTime>
+    </File>
+    <File Include="TelephoneNumbers.aspx">
+      <publishTime>02/02/2021 01:47:49</publishTime>
+    </File>
+    <File Include="ViewAssignments.aspx">
+      <publishTime>02/02/2021 01:50:35</publishTime>
+    </File>
+    <File Include="ViewdCourses.aspx">
+      <publishTime>01/27/2021 04:44:23</publishTime>
+    </File>
+    <File Include="ViewFeedbacks.aspx">
+      <publishTime>02/02/2021 01:50:55</publishTime>
+    </File>
+    <File Include="ViewsubAssignments.aspx">
+      <publishTime>01/25/2021 22:55:06</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/02/2021 00:45:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

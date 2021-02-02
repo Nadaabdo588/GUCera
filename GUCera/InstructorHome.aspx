@@ -16,7 +16,7 @@
     <form id="form1" runat="server">
         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
             <li class="nav-item">
-                <p class="nav-link" style="color: #483D8B;"><b>GUCera</b></p>
+                <p class="nav-link Label3" ><b>GUCera</b></p>
             </li>
             <li class="nav-item">
                 <asp:LinkButton ID="h" CssClass="nav-link active Label4" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
@@ -147,7 +147,7 @@
                 <div class="row h-50 w-75" style="margin: 25px 25px 25px 25px">
                     <div class="card ">
                         <div class="card-header">
-                            <h2 class="Label3">View feedbscks</h2>
+                            <h2 class="Label3">View feedbacks</h2>
                         </div>
                         <div class="card-body">
                             <img src="https://img.icons8.com/clouds/100/000000/task.png" />

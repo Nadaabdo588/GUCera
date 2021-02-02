@@ -13,7 +13,7 @@
 </head>
 <body>
     <form id="form1" runat="server" class="d-flex justify-content-center">
-        <div class="col d-flex justify-content-center">
+        <div >
                             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
 
         </div>

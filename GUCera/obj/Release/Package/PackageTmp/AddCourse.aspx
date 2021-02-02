@@ -15,7 +15,7 @@
 
         <ul class="nav nav-tabs " style="background-color: #FFFFFF;">
             <li class="nav-item">
-                <p class="nav-link" style="color: #483D8B;"><b>GUCera</b></p>
+                <p class="nav-link Label3" ><b>GUCera</b></p>
             </li>
             <li class="nav-item">
                 <asp:LinkButton ID="h" CssClass="nav-link Label4" aria-current="page" runat="server" Text="Home" OnClick="h_Click" />
@@ -29,20 +29,23 @@
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: 8% 8% 8% 8%;">
-            <div class="form col">  
-                <h2 class="Label3">Course details</h2>
-                <br />
-                <br />
-                <input name="nameText" id="nameText" placeholder="Course Name" required />
-                <input id="hoursText" name="hoursText"  placeholder="Credit Hours" required />
-                <input name="PriceText" id="PriceText"  placeholder="Price" required />
-                
-                <asp:Button ID="submitC" CssClass="button" runat="server" Text="Add Course" OnClick="submitC_Click" />
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+            <div class="col">
 
+                <div class="form">
+                    <h2 class="Label3">Course details</h2>
+                    <br />
+                    <br />
+                    <input name="nameText" id="nameText" placeholder="Course Name" required />
+                    <input id="hoursText" name="hoursText" placeholder="Credit Hours" required />
+                    <input name="PriceText" id="PriceText" placeholder="Price" required />
+
+                    <asp:Button ID="submitC" CssClass="button" runat="server" Text="Add Course" OnClick="submitC_Click" />
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+
+                </div>
             </div>
             <div class="col">
-            <img src="course.png" width="600" height="400" />
+                <img src="course.png" width="600" height="400" />
 
             </div>
         </div>

@@ -30,25 +30,27 @@
             </li>
         </ul>
         <div class="layout row" style="padding: 8% 8% 8%; margin: 8% 8% 8% 8%;">
-            <div class="form col">
+            <div class="col">
 
-                <h2 class="Label3">Course details</h2>
+                <div class="form">
 
-                <br />
-                <br />
+                    <h2 class="Label3">Course details</h2>
 
-                <input name="courseText" id="courseText" placeholder="Course ID" required />
-                <input name="studentText" id="studentText" placeholder="Student ID" required />
+                    <br />
+                    <br />
 
-
-                <asp:Button ID="submitC" CssClass="button" runat="server" Text="Issue Certificate" OnClick="submitC_Click" />
-                <br />
-                <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+                    <input name="courseText" id="courseText" placeholder="Course ID" required />
+                    <input name="studentText" id="studentText" placeholder="Student ID" required />
 
 
+                    <asp:Button ID="submitC" CssClass="button" runat="server" Text="Issue Certificate" OnClick="submitC_Click" />
+                    <br />
+                    <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
+
+                </div>
             </div>
             <div class="col">
-                <img src="certificate.png" width="600" height="600"/>
+                <img src="certificate.png" width="400" height="400" />
             </div>
         </div>
     </form>
