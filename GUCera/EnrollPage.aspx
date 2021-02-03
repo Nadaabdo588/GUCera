@@ -47,9 +47,8 @@
                     <asp:Label ID="error" CssClass="message" runat="server" Visible="false"></asp:Label>
                 </div>
             </div>
-            \
             <div class="col">
-                <img src="instructor.png" />
+                <img src="instructor.png" width="400" height="400" />
 
             </div>
         </div>
